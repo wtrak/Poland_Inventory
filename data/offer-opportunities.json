@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "status": "OFFER ONLY",
+    "score_if_accepted": 50,
+    "source": "Bazoš Czechia",
+    "country": "Czechia",
+    "title": "Mix odznaků cca 500 ks",
+    "category": "Vintage Czechoslovak / Eastern Bloc enamel advertising, industrial, transport, military and sports badges",
+    "asking_price_local": "4000 CZK",
+    "asking_price_usd": "$193.45",
+    "asking_price_pln": "715.24 PLN",
+    "suggested_offer_local": "1654.17 CZK",
+    "suggested_offer_usd": "$80.00",
+    "suggested_offer_pln": "295.78 PLN",
+    "walk_away_max_local": "2688.03 CZK",
+    "walk_away_max_usd": "$130.00",
+    "walk_away_max_pln": "480.65 PLN",
+    "offer_discount_from_ask": "59%",
+    "offer_channel": "Marketplace offer/message",
+    "expected_us_value": "Conservative U.S. resale input: $1000.00; 3 recent sold comp(s)",
+    "why_offer": "Ask is too high for the target acquisition ratio, but it is close enough to negotiate. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15% after source-side costs.",
+    "source_side_cost_note": "Estimated buyer protection/inbound source costs: $20.00. Never exceed the walk-away item price unless those costs fall.",
+    "source_url": "https://ostatni.bazos.cz/inzerat/221925998/mix-odznaku-cca-500-ks.php",
+    "checked": "2026-08-20",
+    "fx_date": "2026-08-20",
+    "notes": "Freshness verified from the exact Bazoš listing page, still live when checked 20 Aug 2026. Posted 30 Jul 2026. Seller states approximately 500 mostly enamel badges and specifically lists Vzorný voják ČSLA, Soviet badges, Bez nehody, ZPS Gottwaldov, Svit Gottwaldov, Barum, Mototechna, Silon, PAL, Zetor, Tesla, JZD, ROH, SSM, plus industrial, sports, tourism, automotive and foreign badges. Asking 4,000 CZK works out to about 8 CZK / $0.39 per badge before source-side shipping. Conservative total U.S. resale is intentionally only $1,000 (~$2 per badge average) despite recent sold/market evidence showing individual Czechoslovak badges around $12.99-$19.99 for identifiable examples: Czechoslovakia Legionnaire badge sold $17 on 31 May 2026, vintage CZ motorcycle badge sold $12.99 on 23 Dec 2025, communist Czechoslovakia border-guard badge sold $19.99 on 28 Dec 2025. This is a breakup/reseller-lot play, not an assumption that all 500 pieces are individually worth collector prices. Estimated source-side cost is a placeholder for Czechia→Poland transport; confirm actual shipping/pickup terms before purchase.",
+    "github_issue": 7,
+    "availability_verified_at": null,
+    "automation_generated": true
+  }
+]
