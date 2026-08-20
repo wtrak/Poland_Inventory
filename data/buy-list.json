@@ -4,8 +4,9 @@
     "priority": "A+",
     "source_countries": ["Poland"],
     "ideal_source_channels": ["OLX", "Allegro", "Vinted", "flea markets", "estate lots"],
-    "target_buy_price_local": "<= 5 PLN each in bulk",
-    "max_buy_price_local": "10 PLN each for a strong identifiable piece",
+    "target_buy_price_local": "<= 5 PLN each in bulk (≈ $1.35 USD)",
+    "max_buy_price_local": "10 PLN each for a strong identifiable piece (≈ $2.70 USD)",
+    "fx_date": "2026-08-20",
     "target_us_sold_value_usd": 25,
     "good_us_sold_band_usd": "$25-$35+",
     "minimum_comp_count": 3,
@@ -16,7 +17,7 @@
     "evidence": [
       {"type":"US sold comp","price_usd":27.99,"url":"https://www.ebay.com/itm/168094824653"},
       {"type":"US sold comp","price_usd":34.99,"url":"https://www.ebay.com/itm/166413392242"},
-      {"type":"source-market depth","note":"OLX search showed 128 listings; examples at 8-10 PLN and 34-piece lot at 170 PLN","url":"https://www.olx.pl/antyki-i-kolekcje/q-przypinki-solidarno%C5%9Bci/"}
+      {"type":"source-market depth","note":"OLX search showed 128 listings; examples at 8-10 PLN (≈ $2.16-$2.70 USD) and a 34-piece lot at 170 PLN (≈ $45.98 USD)","url":"https://www.olx.pl/antyki-i-kolekcje/q-przypinki-solidarno%C5%9Bci/"}
     ]
   },
   {
@@ -24,8 +25,9 @@
     "priority": "A",
     "source_countries": ["Czechia", "Slovakia", "Poland", "Romania", "Hungary"],
     "ideal_source_channels": ["Vinted", "Aukro", "Allegro", "estate jewelry lots", "flea markets"],
-    "target_buy_price_local": "equivalent of <= $2 per piece in mixed lots",
-    "max_buy_price_local": "equivalent of $4 for clearly signed/strong pieces",
+    "target_buy_price_local": "equivalent of <= $2 USD / ≈ 7.40 PLN per piece in mixed lots",
+    "max_buy_price_local": "equivalent of $4 USD / ≈ 14.80 PLN for clearly signed/strong pieces",
+    "fx_date": "2026-08-20",
     "target_us_sold_value_usd": 30,
     "good_us_sold_band_usd": "$30-$60; exceptional signed pieces can be higher",
     "minimum_comp_count": 3,
@@ -45,8 +47,9 @@
     "priority": "A",
     "source_countries": ["Hungary"],
     "ideal_source_channels": ["Vatera", "Vinted", "flea markets", "estate textiles"],
-    "target_buy_price_local": "<= 2,000 HUF per small piece; lower in bundles",
-    "max_buy_price_local": "3,000 HUF for a vivid hand-worked small/medium piece",
+    "target_buy_price_local": "<= 2,000 HUF per small piece (≈ $6.40 USD / 23.69 PLN); lower in bundles",
+    "max_buy_price_local": "3,000 HUF for a vivid hand-worked small/medium piece (≈ $9.60 USD / 35.53 PLN)",
+    "fx_date": "2026-08-20",
     "target_us_sold_value_usd": 30,
     "good_us_sold_band_usd": "$30-$45 for strong small pieces; garments can be higher",
     "minimum_comp_count": 3,
@@ -58,7 +61,7 @@
       {"type":"US sold comp","price_usd":34.99,"url":"https://www.ebay.com/itm/146923619767"},
       {"type":"US sold comp","price_usd":42.00,"url":"https://www.ebay.com/itm/205994298220"},
       {"type":"US sold comp","price_usd":35.00,"url":"https://www.ebay.com/itm/397123207580"},
-      {"type":"source-market listing","note":"Vatera search showed small pieces and bundles around 1,000-2,000 HUF","url":"https://www.vatera.hu/listings/index.php?q=Kalocsai+h%C3%ADmzett+ter%C3%ADt%C5%91"}
+      {"type":"source-market listing","note":"Vatera search showed small pieces and bundles around 1,000-2,000 HUF (≈ $3.20-$6.40 USD / 11.84-23.69 PLN)","url":"https://www.vatera.hu/listings/index.php?q=Kalocsai+h%C3%ADmzett+ter%C3%ADt%C5%91"}
     ]
   },
   {
@@ -66,8 +69,9 @@
     "priority": "A-",
     "source_countries": ["Poland"],
     "ideal_source_channels": ["OLX", "Allegro", "flea markets", "estate Christmas lots"],
-    "target_buy_price_local": "<= 5 PLN each; <= 60 PLN per 12-piece ordinary lot",
-    "max_buy_price_local": "10 PLN each only for clearly desirable figural/indent/teardrop pieces",
+    "target_buy_price_local": "<= 5 PLN each (≈ $1.35 USD); <= 60 PLN per 12-piece ordinary lot (≈ $16.23 USD)",
+    "max_buy_price_local": "10 PLN each only for clearly desirable figural/indent/teardrop pieces (≈ $2.70 USD)",
+    "fx_date": "2026-08-20",
     "target_us_sold_value_usd": 24,
     "good_us_sold_band_usd": "$18-$25 for 2-3 good pieces; $50+ for stronger lots",
     "minimum_comp_count": 3,
@@ -78,7 +82,7 @@
     "evidence": [
       {"type":"US sold comp","price_usd":54.00,"note":"9 vintage Polish indent ornaments","url":"https://www.ebay.com/itm/306615624269"},
       {"type":"market evidence","price_usd":21.00,"note":"single vintage Polish teardrop; one sold","url":"https://www.ebay.com/itm/187676101507"},
-      {"type":"source-market depth","note":"OLX search showed 12-piece lots around 29.99-60 PLN and hundreds of listings","url":"https://www.olx.pl/antyki-i-kolekcje/antyki/q-bombki-prl/"}
+      {"type":"source-market depth","note":"OLX search showed 12-piece lots around 29.99-60 PLN (≈ $8.11-$16.23 USD) and hundreds of listings","url":"https://www.olx.pl/antyki-i-kolekcje/antyki/q-bombki-prl/"}
     ]
   },
   {
@@ -86,8 +90,9 @@
     "priority": "B+ sleeper",
     "source_countries": ["Czechia", "Slovakia"],
     "ideal_source_channels": ["Aukro", "military surplus", "estate technical lots"],
-    "target_buy_price_local": "<= 150 CZK",
-    "max_buy_price_local": "200 CZK for complete case/manual or unusual model",
+    "target_buy_price_local": "<= 150 CZK (≈ $7.26 USD / 26.85 PLN)",
+    "max_buy_price_local": "200 CZK for complete case/manual or unusual model (≈ $9.68 USD / 35.80 PLN)",
+    "fx_date": "2026-08-20",
     "target_us_sold_value_usd": 30,
     "good_us_sold_band_usd": "$30-$70 depending model/completeness",
     "minimum_comp_count": 2,
@@ -96,9 +101,9 @@
     "what_to_seek": ["model numbers", "original case", "manual", "specialized industrial/military scales", "Czechoslovakia markings"],
     "avoid": ["generic damaged rules with no model identification"],
     "evidence": [
-      {"type":"source-market sale","price_local":"150 CZK","url":"https://aukro.cz/topografie-csla-acr-pravitko-logarex-7086942603"},
-      {"type":"source-market sale","price_local":"40 CZK","url":"https://aukro.cz/c-2061-topografie-csla-acr-pravitko-logarex-7093328956"},
-      {"type":"source-market sale","price_local":"200 CZK","url":"https://aukro.cz/logaritmicke-pravitko-7075277715"}
+      {"type":"source-market sale","price_local":"150 CZK","price_usd":"$7.26","price_pln":"26.85 PLN","url":"https://aukro.cz/topografie-csla-acr-pravitko-logarex-7086942603"},
+      {"type":"source-market sale","price_local":"40 CZK","price_usd":"$1.94","price_pln":"7.16 PLN","url":"https://aukro.cz/c-2061-topografie-csla-acr-pravitko-logarex-7093328956"},
+      {"type":"source-market sale","price_local":"200 CZK","price_usd":"$9.68","price_pln":"35.80 PLN","url":"https://aukro.cz/logaritmicke-pravitko-7075277715"}
     ]
   },
   {
@@ -106,8 +111,9 @@
     "priority": "A- selective",
     "source_countries": ["Czechia", "Slovakia"],
     "ideal_source_channels": ["Aukro", "Vinted", "estate toy lots", "flea markets"],
-    "target_buy_price_local": "<= 250 CZK per vintage loose piece; much lower in lots",
-    "max_buy_price_local": "350 CZK only for strong boxed vintage piece",
+    "target_buy_price_local": "<= 250 CZK per vintage loose piece (≈ $12.10 USD / 44.75 PLN); much lower in lots",
+    "max_buy_price_local": "350 CZK only for strong boxed vintage piece (≈ $16.93 USD / 62.65 PLN)",
+    "fx_date": "2026-08-20",
     "target_us_sold_value_usd": 30,
     "good_us_sold_band_usd": "$25-$60+",
     "minimum_comp_count": 3,
@@ -116,7 +122,7 @@
     "what_to_seek": ["KDN", "Kaden", "IGRA", "ITES", "Tatra", "Škoda", "Praga", "Zetor", "original boxes"],
     "avoid": ["modern reissues priced near collector value", "large damaged toys unless very cheap"],
     "evidence": [
-      {"type":"source-market reference","price_local":"635-699 CZK","note":"modern/new retro Kaden 1:20 examples show why retail source listings are usually too expensive","url":"https://aukro.cz/kaden-kdn-1-20-skoda-120-modra-retro-model-7091790724"}
+      {"type":"source-market reference","price_local":"635-699 CZK","price_usd":"$30.72-$33.82","price_pln":"113.67-125.13 PLN","note":"modern/new retro Kaden 1:20 examples show why retail source listings are usually too expensive","url":"https://aukro.cz/kaden-kdn-1-20-skoda-120-modra-retro-model-7091790724"}
     ]
   }
 ]
