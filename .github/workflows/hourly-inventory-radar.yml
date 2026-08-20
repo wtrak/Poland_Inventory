@@ -1,0 +1,61 @@
+name: Hourly Inventory Radar
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: hourly-inventory-radar
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Syntax check
+        run: python -m compileall -q scripts
+
+      - name: Run inventory radar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/run_scan.py
+
+      - name: Commit refreshed data
+        shell: bash
+        run: |
+          if git diff --quiet -- \
+            data/fx-rates.json \
+            data/opportunities.json \
+            data/offer-opportunities.json \
+            data/archive/opportunities.json \
+            data/archive/offer-opportunities.json \
+            data/scan-state.json; then
+            echo "No radar data changed."
+            exit 0
+          fi
+          git config user.name "poland-inventory-radar[bot]"
+          git config user.email "poland-inventory-radar[bot]@users.noreply.github.com"
+          git add -- \
+            data/fx-rates.json \
+            data/opportunities.json \
+            data/offer-opportunities.json \
+            data/archive/opportunities.json \
+            data/archive/offer-opportunities.json \
+            data/scan-state.json
+          git commit -m "chore: hourly inventory radar refresh"
+          git push

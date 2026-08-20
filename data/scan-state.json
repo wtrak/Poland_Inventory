@@ -1,0 +1,13 @@
+{
+  "last_run_utc": null,
+  "last_success_utc": null,
+  "last_fx_refresh": null,
+  "runs": 0,
+  "candidates_seen": 0,
+  "new_buy_now": 0,
+  "new_offer_only": 0,
+  "new_watch": 0,
+  "archived": 0,
+  "source_status": {},
+  "notes": "Updated by the hourly GitHub Actions workflow."
+}

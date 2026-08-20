@@ -1,0 +1,14 @@
+{
+  "target_source_cost_pct": 0.10,
+  "walk_away_source_cost_pct": 0.15,
+  "offer_proximity_multiplier": 1.50,
+  "preferred_weight_g": 200,
+  "stale_after_days": 7,
+  "archive_after_days": 21,
+  "default_repeatability_points": 10,
+  "default_reseller_simplicity_points": 5,
+  "vinted_manual_verification_required": true,
+  "vinted_max_confirmation_age_hours": 4,
+  "vinted_live_ttl_hours": 4,
+  "notes": "Offer math is based on conservative U.S. resale value and source-side costs. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15%. Vinted listings are never accepted from public web indexing; they require fresh manual in-app availability confirmation. A confirmed Vinted listing remains in the live feed for no more than 4 hours unless re-confirmed."
+}
