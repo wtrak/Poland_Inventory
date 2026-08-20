@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 
 HEADING = re.compile(r"^###\s+(.+?)\s*$", re.M)
@@ -46,7 +47,16 @@ def _number(value: str, default=0.0):
         return default
 
 
-def fetch_candidates(fx: dict) -> tuple[list[dict], list[dict], str | None]:
+def _issue_age_hours(issue: dict) -> float:
+    try:
+        created = datetime.fromisoformat(str(issue.get("created_at", "")).replace("Z", "+00:00"))
+        return max(0.0, (datetime.now(timezone.utc) - created).total_seconds() / 3600.0)
+    except Exception:
+        return 999999.0
+
+
+def fetch_candidates(fx: dict, settings: dict | None = None) -> tuple[list[dict], list[dict], str | None]:
+    settings = settings or {}
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     token = os.environ.get("GITHUB_TOKEN", "")
     if not repo or not token:
@@ -55,6 +65,8 @@ def fetch_candidates(fx: dict) -> tuple[list[dict], list[dict], str | None]:
         issues = _request(f"https://api.github.com/repos/{repo}/issues?state=open&per_page=100", token) or []
         candidates = []
         processed = []
+        max_vinted_age = float(settings.get("vinted_max_confirmation_age_hours", 4) or 4)
+        require_vinted_confirmation = bool(settings.get("vinted_manual_verification_required", True))
         for issue in issues:
             if issue.get("pull_request") or not str(issue.get("title", "")).startswith("[INBOX]"):
                 continue
@@ -65,10 +77,23 @@ def fetch_candidates(fx: dict) -> tuple[list[dict], list[dict], str | None]:
                 rate = fx["rates"][currency]
                 ask_usd = ask_local * float(rate["usd_per_unit"])
                 ask_pln = ask_local * float(rate["pln_per_unit"])
+                marketplace = fields.get("Marketplace", "").strip()
+                source_url = fields.get("Listing URL", "").strip()
+                is_vinted = "vinted" in marketplace.lower() or "vinted." in source_url.lower()
+                availability_text = fields.get("Availability confirmed now", "")
+                availability_confirmed = "[x]" in availability_text.lower()
+                age_hours = _issue_age_hours(issue)
+
+                # Vinted public/search-engine indexing is too stale for live buying decisions.
+                # A Vinted candidate is accepted only after fresh manual in-app confirmation.
+                if is_vinted and require_vinted_confirmation:
+                    if not availability_confirmed or age_hours > max_vinted_age:
+                        continue
+
                 candidate = {
-                    "source_url": fields.get("Listing URL", "").strip(),
-                    "marketplace": fields.get("Marketplace", "").strip(),
-                    "source": fields.get("Marketplace", "").strip(),
+                    "source_url": source_url,
+                    "marketplace": marketplace,
+                    "source": marketplace,
                     "country": fields.get("Country", "").strip(),
                     "title": fields.get("Item title", "").strip(),
                     "category": fields.get("Category", "").strip(),
@@ -82,6 +107,9 @@ def fetch_candidates(fx: dict) -> tuple[list[dict], list[dict], str | None]:
                     "source_side_costs_usd": _number(fields.get("Source-side costs (USD)", "")),
                     "notes": fields.get("Notes", "").strip(),
                     "github_issue": issue.get("number"),
+                    "availability_confirmed": availability_confirmed,
+                    "availability_verified_at": issue.get("created_at") if is_vinted else None,
+                    "availability_confirmation_age_hours": round(age_hours, 2) if is_vinted else None,
                 }
                 if not candidate["source_url"] or not candidate["title"] or candidate["conservative_us_resale_usd"] <= 0:
                     continue
