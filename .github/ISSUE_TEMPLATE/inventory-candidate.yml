@@ -1,5 +1,5 @@
 name: Inventory candidate
-description: Add a Vinted or other marketplace listing to the hourly analysis queue.
+description: Add a freshly verified marketplace listing to the hourly analysis queue.
 title: "[INBOX] "
 body:
   - type: input
@@ -23,6 +23,14 @@ body:
       placeholder: Czechia
     validations:
       required: true
+  - type: checkboxes
+    id: availability_confirmed
+    attributes:
+      label: Availability confirmed now
+      description: For Vinted, open the listing in the Vinted app immediately before submitting and confirm it is still available to buy. Public/search-engine results do not count as confirmation.
+      options:
+        - label: I confirmed this exact listing is currently available.
+          required: true
   - type: input
     id: item_title
     attributes:
