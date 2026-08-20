@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Polish Solidarność / historically specific PRL pins",
+    "priority": "A+",
+    "source_countries": ["Poland"],
+    "ideal_source_channels": ["OLX", "Allegro", "Vinted", "flea markets", "estate lots"],
+    "target_buy_price_local": "<= 5 PLN each in bulk",
+    "max_buy_price_local": "10 PLN each for a strong identifiable piece",
+    "target_us_sold_value_usd": 25,
+    "good_us_sold_band_usd": "$25-$35+",
+    "minimum_comp_count": 3,
+    "preferred_weight_g": "<50",
+    "shipping_grade": "A+",
+    "what_to_seek": ["Solidarność strikes", "factory/mine/city-specific issues", "1980-81", "1989 election", "Wałęsa", "Popiełuszko", "banned events", "unusual union or plant issues"],
+    "avoid": ["generic communist badges with no specific history", "modern reproductions"],
+    "evidence": [
+      {"type":"US sold comp","price_usd":27.99,"url":"https://www.ebay.com/itm/168094824653"},
+      {"type":"US sold comp","price_usd":34.99,"url":"https://www.ebay.com/itm/166413392242"},
+      {"type":"source-market depth","note":"OLX search showed 128 listings; examples at 8-10 PLN and 34-piece lot at 170 PLN","url":"https://www.olx.pl/antyki-i-kolekcje/q-przypinki-solidarno%C5%9Bci/"}
+    ]
+  },
+  {
+    "category": "Vintage Czech / Czechoslovak glass costume jewelry",
+    "priority": "A",
+    "source_countries": ["Czechia", "Slovakia", "Poland", "Romania", "Hungary"],
+    "ideal_source_channels": ["Vinted", "Aukro", "Allegro", "estate jewelry lots", "flea markets"],
+    "target_buy_price_local": "equivalent of <= $2 per piece in mixed lots",
+    "max_buy_price_local": "equivalent of $4 for clearly signed/strong pieces",
+    "target_us_sold_value_usd": 30,
+    "good_us_sold_band_usd": "$30-$60; exceptional signed pieces can be higher",
+    "minimum_comp_count": 3,
+    "preferred_weight_g": "<50",
+    "shipping_grade": "A+",
+    "what_to_seek": ["CZECHO / CZECHOSLOVAKIA marks", "filigree", "faceted glass", "Art Deco geometry", "large ornate brooches", "opaline glass", "uranium glass where legally shippable"],
+    "avoid": ["modern generic rhinestone brooches", "retail-priced collector listings"],
+    "evidence": [
+      {"type":"US sold comp","price_usd":29.95,"url":"https://www.ebay.com/itm/137211456703"},
+      {"type":"US sold comp","price_usd":31.99,"url":"https://www.ebay.com/itm/257259371663"},
+      {"type":"US sold comp","price_usd":60.00,"url":"https://www.ebay.com/itm/306306691024"},
+      {"type":"US sold comp","price_usd":80.00,"url":"https://www.ebay.com/itm/306586428101"}
+    ]
+  },
+  {
+    "category": "Hungarian hand-embroidered Kalocsa linens",
+    "priority": "A",
+    "source_countries": ["Hungary"],
+    "ideal_source_channels": ["Vatera", "Vinted", "flea markets", "estate textiles"],
+    "target_buy_price_local": "<= 2,000 HUF per small piece; lower in bundles",
+    "max_buy_price_local": "3,000 HUF for a vivid hand-worked small/medium piece",
+    "target_us_sold_value_usd": 30,
+    "good_us_sold_band_usd": "$30-$45 for strong small pieces; garments can be higher",
+    "minimum_comp_count": 3,
+    "preferred_weight_g": "<200",
+    "shipping_grade": "A+",
+    "what_to_seek": ["hand embroidery", "bright floral Kalocsa motifs", "doilies", "runners", "aprons", "pillow covers", "clean condition"],
+    "avoid": ["machine embroidery", "large stained tablecloths", "generic tourist prints"],
+    "evidence": [
+      {"type":"US sold comp","price_usd":34.99,"url":"https://www.ebay.com/itm/146923619767"},
+      {"type":"US sold comp","price_usd":42.00,"url":"https://www.ebay.com/itm/205994298220"},
+      {"type":"US sold comp","price_usd":35.00,"url":"https://www.ebay.com/itm/397123207580"},
+      {"type":"source-market listing","note":"Vatera search showed small pieces and bundles around 1,000-2,000 HUF","url":"https://www.vatera.hu/listings/index.php?q=Kalocsai+h%C3%ADmzett+ter%C3%ADt%C5%91"}
+    ]
+  },
+  {
+    "category": "Vintage Polish hand-blown / indent glass Christmas ornaments",
+    "priority": "A-",
+    "source_countries": ["Poland"],
+    "ideal_source_channels": ["OLX", "Allegro", "flea markets", "estate Christmas lots"],
+    "target_buy_price_local": "<= 5 PLN each; <= 60 PLN per 12-piece ordinary lot",
+    "max_buy_price_local": "10 PLN each only for clearly desirable figural/indent/teardrop pieces",
+    "target_us_sold_value_usd": 24,
+    "good_us_sold_band_usd": "$18-$25 for 2-3 good pieces; $50+ for stronger lots",
+    "minimum_comp_count": 3,
+    "preferred_weight_g": "<100 each but fragile volume matters",
+    "shipping_grade": "B",
+    "what_to_seek": ["indents", "teardrops", "figural shapes", "hand-painted", "older original boxes", "Fantasia", "unusual colors"],
+    "avoid": ["ordinary modern balls", "cracked necks", "heavy paint loss unless rare"],
+    "evidence": [
+      {"type":"US sold comp","price_usd":54.00,"note":"9 vintage Polish indent ornaments","url":"https://www.ebay.com/itm/306615624269"},
+      {"type":"market evidence","price_usd":21.00,"note":"single vintage Polish teardrop; one sold","url":"https://www.ebay.com/itm/187676101507"},
+      {"type":"source-market depth","note":"OLX search showed 12-piece lots around 29.99-60 PLN and hundreds of listings","url":"https://www.olx.pl/antyki-i-kolekcje/antyki/q-bombki-prl/"}
+    ]
+  },
+  {
+    "category": "Czech Logarex slide rules and specialized technical rules",
+    "priority": "B+ sleeper",
+    "source_countries": ["Czechia", "Slovakia"],
+    "ideal_source_channels": ["Aukro", "military surplus", "estate technical lots"],
+    "target_buy_price_local": "<= 150 CZK",
+    "max_buy_price_local": "200 CZK for complete case/manual or unusual model",
+    "target_us_sold_value_usd": 30,
+    "good_us_sold_band_usd": "$30-$70 depending model/completeness",
+    "minimum_comp_count": 2,
+    "preferred_weight_g": "<250",
+    "shipping_grade": "A",
+    "what_to_seek": ["model numbers", "original case", "manual", "specialized industrial/military scales", "Czechoslovakia markings"],
+    "avoid": ["generic damaged rules with no model identification"],
+    "evidence": [
+      {"type":"source-market sale","price_local":"150 CZK","url":"https://aukro.cz/topografie-csla-acr-pravitko-logarex-7086942603"},
+      {"type":"source-market sale","price_local":"40 CZK","url":"https://aukro.cz/c-2061-topografie-csla-acr-pravitko-logarex-7093328956"},
+      {"type":"source-market sale","price_local":"200 CZK","url":"https://aukro.cz/logaritmicke-pravitko-7075277715"}
+    ]
+  },
+  {
+    "category": "Czechoslovak KDN / Kaden / IGRA / ITES toy vehicles",
+    "priority": "A- selective",
+    "source_countries": ["Czechia", "Slovakia"],
+    "ideal_source_channels": ["Aukro", "Vinted", "estate toy lots", "flea markets"],
+    "target_buy_price_local": "<= 250 CZK per vintage loose piece; much lower in lots",
+    "max_buy_price_local": "350 CZK only for strong boxed vintage piece",
+    "target_us_sold_value_usd": 30,
+    "good_us_sold_band_usd": "$25-$60+",
+    "minimum_comp_count": 3,
+    "preferred_weight_g": "<500",
+    "shipping_grade": "B+",
+    "what_to_seek": ["KDN", "Kaden", "IGRA", "ITES", "Tatra", "Škoda", "Praga", "Zetor", "original boxes"],
+    "avoid": ["modern reissues priced near collector value", "large damaged toys unless very cheap"],
+    "evidence": [
+      {"type":"source-market reference","price_local":"635-699 CZK","note":"modern/new retro Kaden 1:20 examples show why retail source listings are usually too expensive","url":"https://aukro.cz/kaden-kdn-1-20-skoda-120-modra-retro-model-7091790724"}
+    ]
+  }
+]
