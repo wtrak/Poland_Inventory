@@ -5,6 +5,7 @@ from datetime import datetime, timezone, date
 from pathlib import Path
 
 from dedupe import dedupe
+from feed_loader import load_permitted_json_feeds
 from fx import refresh_fx
 from github_inbox import fetch_candidates, close_processed
 from scoring import score_candidate, score_label, offer_math
@@ -118,7 +119,7 @@ def candidate_to_offer(candidate: dict, score: int, offer: dict, fx: dict, today
         "offer_discount_from_ask": f"{discount}%",
         "offer_channel": channel,
         "expected_us_value": f"Conservative U.S. resale input: ${candidate['conservative_us_resale_usd']:.2f}; {candidate['comp_count']} recent sold comp(s)",
-        "why_offer": f"Ask is too high for the target acquisition ratio, but it is close enough to negotiate. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15% after source-side costs.",
+        "why_offer": "Ask is too high for the target acquisition ratio, but it is close enough to negotiate. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15% after source-side costs.",
         "source_side_cost_note": f"Estimated buyer protection/inbound source costs: ${candidate['source_side_costs_usd']:.2f}. Never exceed the walk-away item price unless those costs fall.",
         "source_url": candidate["source_url"],
         "checked": today,
@@ -146,7 +147,9 @@ def main():
     opportunities, archive, moved_a = archive_stale(opportunities, archive, archive_days, today)
     offers, offer_archive, moved_b = archive_stale(offers, offer_archive, archive_days, today)
 
-    candidates, processed_issues, inbox_error = fetch_candidates(fx)
+    issue_candidates, processed_issues, inbox_error = fetch_candidates(fx)
+    feed_candidates, feed_status = load_permitted_json_feeds(DATA / "feeds.json", fx)
+    candidates = dedupe(issue_candidates + feed_candidates)
     result_comments = {}
     buy_count = offer_count = watch_count = 0
 
@@ -163,14 +166,17 @@ def main():
                 buy_count += 1
             else:
                 watch_count += 1
-            result_comments[issue_no] = f"Radar result: **{label}** — score {score}/100. Ask ${candidate['asking_price_usd']:.2f} / {candidate['asking_price_pln']:.2f} PLN. Conservative U.S. resale ${candidate['conservative_us_resale_usd']:.2f}. Added to Live Opportunities."
+            if issue_no:
+                result_comments[issue_no] = f"Radar result: **{label}** — score {score}/100. Ask ${candidate['asking_price_usd']:.2f} / {candidate['asking_price_pln']:.2f} PLN. Conservative U.S. resale ${candidate['conservative_us_resale_usd']:.2f}. Added to Live Opportunities."
         elif offer["lane"] == "OFFER_ONLY" and score >= 50:
             item = candidate_to_offer(candidate, score, offer, fx, today_s)
             offers.append(item)
             offer_count += 1
-            result_comments[issue_no] = f"Radar result: **OFFER ONLY** — score {score}/100. Send about ${offer['suggested_offer_usd']:.2f}; hard walk-away ${offer['walk_away_max_usd']:.2f}. Added to Offer Opportunities."
+            if issue_no:
+                result_comments[issue_no] = f"Radar result: **OFFER ONLY** — score {score}/100. Send about ${offer['suggested_offer_usd']:.2f}; hard walk-away ${offer['walk_away_max_usd']:.2f}. Added to Offer Opportunities."
         else:
-            result_comments[issue_no] = f"Radar result: **PASS / RESEARCH** — score {score}/100. Ask ${candidate['asking_price_usd']:.2f}; formula walk-away ${offer['walk_away_max_usd']:.2f}. Not added to the active buying feed."
+            if issue_no:
+                result_comments[issue_no] = f"Radar result: **PASS / RESEARCH** — score {score}/100. Ask ${candidate['asking_price_usd']:.2f}; formula walk-away ${offer['walk_away_max_usd']:.2f}. Not added to the active buying feed."
 
     opportunities = dedupe(opportunities)
     offers = dedupe(offers)
@@ -181,9 +187,9 @@ def main():
 
     source_status = {
         "vinted": "manual saved-search + GitHub inbox only; no automated crawling",
-        "approved_feeds": "configured through data/feeds.json; only automation_allowed=true endpoints may run",
         "fx": fx_error or f"OK ({fx.get('as_of', 'unknown')})",
-        "github_inbox": inbox_error or f"OK ({len(candidates)} candidate(s))",
+        "github_inbox": inbox_error or f"OK ({len(issue_candidates)} candidate(s))",
+        "approved_feeds": feed_status or {"status": "No enabled permitted feeds"},
     }
     state.update({
         "last_run_utc": now.isoformat(),
