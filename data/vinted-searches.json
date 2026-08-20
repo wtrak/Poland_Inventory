@@ -1,12 +1,106 @@
 [
-  {"country":"Poland","site":"https://www.vinted.pl/","terms":["przypinka PRL","Solidarność przypinka","Jablonex","broszka vintage","brelok vintage","stare odznaki","retro kolekcja"]},
-  {"country":"Czechia","site":"https://www.vinted.cz/","terms":["Jablonex","Jablonec brož","Československo vintage","odznaky retro","stará bižuterie","KDN","IGRA","ITES","Logarex"]},
-  {"country":"Slovakia","site":"https://www.vinted.sk/","terms":["retro odznaky","odznaky a iné","Jablonex","brošňa vintage","Československo","stará bižutéria"]},
-  {"country":"Hungary","site":"https://www.vinted.hu/","terms":["kalocsai kézi hímzés","kalocsai vintage","matyó hímzés","régi jelvény","érdemérem","retro bross"]},
-  {"country":"Romania","site":"https://www.vinted.ro/","terms":["insignă vintage","insignă comunistă","broșă vintage","breloc vintage","cehoslovacia","retro","folk","brodat"]},
-  {"country":"Lithuania","site":"https://www.vinted.lt/","terms":["gintaro vėrinys","gintaro apyrankė","gintaro sagė","gintarinės sąsagos","tarybinis ženkliukas","vintažinė sagė"]},
-  {"country":"Latvia","site":"https://www.vinted.lv/","terms":["dzintars vintage","dzintara broša","padomju nozīmīte","vintage broša","PSRS"]},
-  {"country":"Estonia","site":"https://www.vinted.ee/","terms":["merevaik vintage","merevaigust pross","nõukogude märk","Eesti NSV","vintage pross"]},
-  {"country":"Croatia","site":"https://www.vinted.hr/","terms":["Jugoslavija vintage","Jugokeramika","Rogaška","Boris Kidrič","JNA","značka Jugoslavija","retro kolekcionarsko"]},
-  {"country":"Slovenia","site":"https://www.vinted.si/","terms":["Rogaška vintage","Jugoslavija","stara značka","vintage broška","retro zbirateljsko"]}
+  {
+    "country":"Poland","site":"https://www.vinted.pl/","currency":"PLN","searches":[
+      {"term":"przypinka PRL","target_usd":1.35,"max_usd":2.70,"conservative_us_resale_usd":25,"note":"Per historically specific pin; generic badges should be cheaper."},
+      {"term":"Solidarność przypinka","target_usd":1.35,"max_usd":2.70,"conservative_us_resale_usd":25,"note":"Best for identifiable 1980s Solidarność issues."},
+      {"term":"Jablonex","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Only older Czech/Jablonex glass jewelry with age/quality cues."},
+      {"term":"broszka vintage","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Use for Czech/Czechoslovak glass construction, not generic fashion jewelry."},
+      {"term":"brelok vintage","target_usd":1.00,"max_usd":2.00,"conservative_us_resale_usd":20,"note":"Only branded, historically specific or visually distinctive pieces."},
+      {"term":"stare odznaki","target_usd":1.35,"max_usd":2.70,"conservative_us_resale_usd":25,"note":"Per worthwhile identifiable badge after dividing lot price."},
+      {"term":"retro kolekcja","target_usd":1.00,"max_usd":2.00,"conservative_us_resale_usd":20,"note":"Per worthwhile small item in a mixed collection; buy for breakup value."}
+    ]
+  },
+  {
+    "country":"Czechia","site":"https://www.vinted.cz/","currency":"CZK","searches":[
+      {"term":"Jablonex","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Older glass jewelry only."},
+      {"term":"Jablonec brož","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Brooch target; verify clasp/back and age."},
+      {"term":"Československo vintage","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Per small identifiable collectible."},
+      {"term":"odznaky retro","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Per desirable badge; generic examples should be below target."},
+      {"term":"stará bižuterie","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Old costume jewelry, preferably glass/filigree."},
+      {"term":"KDN","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Per loose vintage vehicle; boxed/rare pieces require stronger comps."},
+      {"term":"IGRA","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Per loose vintage toy; lower in lots."},
+      {"term":"ITES","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Per loose vintage toy; lower in lots."},
+      {"term":"Logarex","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Complete/specialized rules can justify max; generic incomplete ones should be cheaper."}
+    ]
+  },
+  {
+    "country":"Slovakia","site":"https://www.vinted.sk/","currency":"EUR","searches":[
+      {"term":"retro odznaky","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Per desirable badge in a lot."},
+      {"term":"odznaky a iné","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Breakup-lot target per worthwhile piece."},
+      {"term":"Jablonex","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Older Czech glass jewelry only."},
+      {"term":"brošňa vintage","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Prefer Czechoslovak glass/filigree construction."},
+      {"term":"Československo","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Small identifiable vintage collectibles only."},
+      {"term":"stará bižutéria","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Old costume jewelry, preferably signed or strong glass construction."}
+    ]
+  },
+  {
+    "country":"Hungary","site":"https://www.vinted.hu/","currency":"HUF","searches":[
+      {"term":"kalocsai kézi hímzés","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Per small genuine hand-embroidered piece; lower in bundles."},
+      {"term":"kalocsai vintage","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Genuine handwork preferred; machine embroidery should be cheaper."},
+      {"term":"matyó hímzés","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Per compact hand-embroidered piece."},
+      {"term":"régi jelvény","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific awards/factories/events only."},
+      {"term":"érdemérem","target_usd":2.00,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Only identifiable medals with demonstrated U.S. demand."},
+      {"term":"retro bross","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Old glass/filigree construction preferred."}
+    ]
+  },
+  {
+    "country":"Romania","site":"https://www.vinted.ro/","currency":"RON","searches":[
+      {"term":"insignă vintage","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific identifiable badge, not generic communist imagery."},
+      {"term":"insignă comunistă","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Factory/unit/event-specific pieces only."},
+      {"term":"broșă vintage","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Best when older Czech/Czechoslovak glass construction is visible."},
+      {"term":"breloc vintage","target_usd":1.00,"max_usd":2.00,"conservative_us_resale_usd":20,"note":"Branded or historically specific pieces only."},
+      {"term":"cehoslovacia","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Use for Czechoslovak jewelry/small collectibles."},
+      {"term":"retro","target_usd":1.00,"max_usd":2.00,"conservative_us_resale_usd":20,"note":"Per worthwhile small item; broad search requires aggressive filtering."},
+      {"term":"folk","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Compact genuine folk textiles/accessories only."},
+      {"term":"brodat","target_usd":3.00,"max_usd":4.50,"conservative_us_resale_usd":30,"note":"Hand embroidery preferred; price is per compact sellable piece."}
+    ]
+  },
+  {
+    "country":"Lithuania","site":"https://www.vinted.lt/","currency":"EUR","searches":[
+      {"term":"gintaro vėrinys","target_usd":4.00,"max_usd":6.00,"conservative_us_resale_usd":40,"note":"Genuine Baltic amber necklace only; weight and clasp matter."},
+      {"term":"gintaro apyrankė","target_usd":4.00,"max_usd":6.00,"conservative_us_resale_usd":40,"note":"Genuine amber bracelet; lower for small/light modern pieces."},
+      {"term":"gintaro sagė","target_usd":3.50,"max_usd":5.25,"conservative_us_resale_usd":35,"note":"Older amber brooch, ideally silver/marked."},
+      {"term":"gintarinės sąsagos","target_usd":4.00,"max_usd":6.00,"conservative_us_resale_usd":40,"note":"Pairs only; silver/older construction preferred."},
+      {"term":"tarybinis ženkliukas","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific Soviet-era Lithuanian institution/event badges only."},
+      {"term":"vintažinė sagė","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Older glass/amber/silver construction, not modern fashion jewelry."}
+    ]
+  },
+  {
+    "country":"Latvia","site":"https://www.vinted.lv/","currency":"EUR","searches":[
+      {"term":"dzintars vintage","target_usd":4.00,"max_usd":6.00,"conservative_us_resale_usd":40,"note":"Genuine Baltic amber pieces only."},
+      {"term":"dzintara broša","target_usd":3.50,"max_usd":5.25,"conservative_us_resale_usd":35,"note":"Older genuine amber brooch; silver/marked is better."},
+      {"term":"padomju nozīmīte","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific institution/event badges only."},
+      {"term":"vintage broša","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Old glass/amber/silver construction preferred."},
+      {"term":"PSRS","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Broad Soviet search; only compact identifiable pieces."}
+    ]
+  },
+  {
+    "country":"Estonia","site":"https://www.vinted.ee/","currency":"EUR","searches":[
+      {"term":"merevaik vintage","target_usd":4.00,"max_usd":6.00,"conservative_us_resale_usd":40,"note":"Genuine amber only."},
+      {"term":"merevaigust pross","target_usd":3.50,"max_usd":5.25,"conservative_us_resale_usd":35,"note":"Older amber brooch; silver/marked preferred."},
+      {"term":"nõukogude märk","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific Soviet-era Estonian badge only."},
+      {"term":"Eesti NSV","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Compact identifiable ESSR collectible only."},
+      {"term":"vintage pross","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Old glass/amber/silver construction preferred."}
+    ]
+  },
+  {
+    "country":"Croatia","site":"https://www.vinted.hr/","currency":"EUR","searches":[
+      {"term":"Jugoslavija vintage","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Per compact identifiable Yugoslav collectible."},
+      {"term":"Jugokeramika","target_usd":1.00,"max_usd":1.50,"conservative_us_resale_usd":15,"note":"Per piece; only compact/unusual designs because ceramics are fragile."},
+      {"term":"Rogaška","target_usd":1.50,"max_usd":2.25,"conservative_us_resale_usd":15,"note":"Per glass; only unusual patterns/sets because freight and breakage hurt margins."},
+      {"term":"Boris Kidrič","target_usd":1.50,"max_usd":2.25,"conservative_us_resale_usd":15,"note":"Per glass; pattern-dependent and fragile."},
+      {"term":"JNA","target_usd":2.00,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Small/light JNA pieces only; pass on bulky canteens/containers."},
+      {"term":"značka Jugoslavija","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific badge/event/institution only."},
+      {"term":"retro kolekcionarsko","target_usd":1.00,"max_usd":2.00,"conservative_us_resale_usd":20,"note":"Per worthwhile compact item in a mixed lot."}
+    ]
+  },
+  {
+    "country":"Slovenia","site":"https://www.vinted.si/","currency":"EUR","searches":[
+      {"term":"Rogaška vintage","target_usd":1.50,"max_usd":2.25,"conservative_us_resale_usd":15,"note":"Per glass; only strong pattern/condition because of fragility."},
+      {"term":"Jugoslavija","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Compact identifiable Yugoslav collectible only."},
+      {"term":"stara značka","target_usd":1.50,"max_usd":3.00,"conservative_us_resale_usd":20,"note":"Specific badge/event/institution only."},
+      {"term":"vintage broška","target_usd":2.00,"max_usd":4.00,"conservative_us_resale_usd":30,"note":"Old glass/filigree/silver construction preferred."},
+      {"term":"retro zbirateljsko","target_usd":1.00,"max_usd":2.00,"conservative_us_resale_usd":20,"note":"Per worthwhile compact item in a collection."}
+    ]
+  }
 ]
