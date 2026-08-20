@@ -1,12 +1,21 @@
 [
   {
-    "name":"Example permitted JSON/RSS source",
+    "name":"Example permitted JSON source",
     "enabled":false,
     "automation_allowed":true,
-    "type":"json_or_rss",
+    "type":"json",
     "url":"",
     "country":"",
     "marketplace":"",
-    "notes":"Only enable endpoints whose API/feed terms permit automated retrieval. Vinted must not be added here."
+    "currency":"PLN",
+    "items_path":"",
+    "field_map":{"title":"title","url":"url","asking_price":"price"},
+    "category":"",
+    "conservative_us_resale_usd":0,
+    "comp_count":0,
+    "weight_g":200,
+    "source_side_costs_usd":0,
+    "max_items_per_run":100,
+    "notes":"Only enable an endpoint whose API/feed terms explicitly permit automated retrieval. Vinted must never be added here."
   }
 ]
