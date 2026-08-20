@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Syntax check
+        run: python -m compileall -q scripts
+
       - name: Run inventory radar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
