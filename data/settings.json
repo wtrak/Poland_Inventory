@@ -1,0 +1,11 @@
+{
+  "target_source_cost_pct": 0.10,
+  "walk_away_source_cost_pct": 0.15,
+  "offer_proximity_multiplier": 1.50,
+  "preferred_weight_g": 200,
+  "stale_after_days": 7,
+  "archive_after_days": 21,
+  "default_repeatability_points": 10,
+  "default_reseller_simplicity_points": 5,
+  "notes": "Offer math is based on conservative U.S. resale value and source-side costs. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15%."
+}
