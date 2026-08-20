@@ -71,5 +71,29 @@
     ],
     "checked": "2026-08-20",
     "notes": "Confirm hand embroidery and condition. Prefer vivid floral pieces and small bundles."
+  },
+  {
+    "status": "BUY",
+    "score": 85,
+    "source": "OLX Poland",
+    "country": "Poland",
+    "title": "Stara Modernistyczna Broszka z Prl",
+    "source_price": "10 PLN",
+    "source_price_usd": "$2.70",
+    "source_price_pln": "10.00 PLN",
+    "unit_cost": "10 PLN",
+    "unit_cost_usd": "$2.70",
+    "unit_cost_pln": "10.00 PLN",
+    "fx_date": "2026-08-20",
+    "category": "Vintage modernist / brutalist costume brooch",
+    "expected_us_value": "Conservative U.S. resale input: $20.00; 3 recent sold comp(s)",
+    "why": "Automated intake score 85/100. Asking price plus estimated source-side costs is $2.70 against $20.00 conservative U.S. resale.",
+    "source_url": "https://www.olx.pl/d/oferta/stara-modernistyczna-broszka-z-prl-CID87-ID1biigQ.html",
+    "comp_urls": [],
+    "checked": "2026-08-20",
+    "notes": "Freshness check: exact OLX listing was published 1 Aug 2026 and the seller showed active today on 20 Aug 2026. Listing is 10 PLN and says personal pickup. This is a WATCH/VERIFY candidate, not a blind buy: inspect photos/back/clasp and any marks before purchase. Conservative resale set at $20 because recent eBay sold modernist brooch examples include $19.99 (Krasne gold-tone, sold Jun 6 2026), $20.00 (silver-tone brutalist modernist, sold Jan 9 2026), and $28.95 (Jorgen Jensen pewter modernist, sold May 28 2026). Stronger sterling/signed examples sell higher, but that upside is not assumed here. Source-side costs entered as 0 because the listing specifies local pickup; any travel/pickup cost should be added manually if material.",
+    "github_issue": 5,
+    "availability_verified_at": null,
+    "automation_generated": true
   }
 ]
