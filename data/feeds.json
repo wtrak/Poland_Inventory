@@ -1,0 +1,12 @@
+[
+  {
+    "name":"Example permitted JSON/RSS source",
+    "enabled":false,
+    "automation_allowed":true,
+    "type":"json_or_rss",
+    "url":"",
+    "country":"",
+    "marketplace":"",
+    "notes":"Only enable endpoints whose API/feed terms permit automated retrieval. Vinted must not be added here."
+  }
+]
