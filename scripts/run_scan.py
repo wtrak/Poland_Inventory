@@ -33,6 +33,13 @@ def parse_day(value: str | None):
         return None
 
 
+def parse_dt(value: str | None):
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00")).astimezone(timezone.utc)
+    except Exception:
+        return None
+
+
 def archive_stale(items: list[dict], archive: list[dict], days: int, today: date):
     keep, moved = [], []
     for item in items:
@@ -41,6 +48,26 @@ def archive_stale(items: list[dict], archive: list[dict], days: int, today: date
             copy = dict(item)
             copy["archived_at"] = today.isoformat()
             copy["archive_reason"] = f"Not rechecked for {days}+ days"
+            moved.append(copy)
+        else:
+            keep.append(item)
+    return keep, dedupe(archive + moved), len(moved)
+
+
+def expire_vinted(items: list[dict], archive: list[dict], ttl_hours: float, now: datetime):
+    keep, moved = [], []
+    for item in items:
+        source = str(item.get("source", "")).lower()
+        url = str(item.get("source_url", "")).lower()
+        is_vinted = "vinted" in source or "vinted." in url
+        if not is_vinted:
+            keep.append(item)
+            continue
+        verified = parse_dt(item.get("availability_verified_at"))
+        if not verified or (now - verified).total_seconds() / 3600.0 > ttl_hours:
+            copy = dict(item)
+            copy["archived_at"] = now.date().isoformat()
+            copy["archive_reason"] = f"Vinted availability confirmation older than {ttl_hours:g} hours"
             moved.append(copy)
         else:
             keep.append(item)
@@ -83,6 +110,7 @@ def candidate_to_buy(candidate: dict, score: int, label: str, fx: dict, today: s
         "checked": today,
         "notes": candidate.get("notes", ""),
         "github_issue": candidate.get("github_issue"),
+        "availability_verified_at": candidate.get("availability_verified_at"),
         "automation_generated": True,
     }
 
@@ -126,6 +154,7 @@ def candidate_to_offer(candidate: dict, score: int, offer: dict, fx: dict, today
         "fx_date": fx.get("as_of"),
         "notes": candidate.get("notes", ""),
         "github_issue": candidate.get("github_issue"),
+        "availability_verified_at": candidate.get("availability_verified_at"),
         "automation_generated": True,
     }
 
@@ -143,11 +172,15 @@ def main():
     archive = load(DATA / "archive/opportunities.json", [])
     offer_archive = load(DATA / "archive/offer-opportunities.json", [])
 
+    vinted_ttl = float(settings.get("vinted_live_ttl_hours", 4) or 4)
+    opportunities, archive, moved_v1 = expire_vinted(opportunities, archive, vinted_ttl, now)
+    offers, offer_archive, moved_v2 = expire_vinted(offers, offer_archive, vinted_ttl, now)
+
     archive_days = int(settings.get("archive_after_days", 21))
     opportunities, archive, moved_a = archive_stale(opportunities, archive, archive_days, today)
     offers, offer_archive, moved_b = archive_stale(offers, offer_archive, archive_days, today)
 
-    issue_candidates, processed_issues, inbox_error = fetch_candidates(fx)
+    issue_candidates, processed_issues, inbox_error = fetch_candidates(fx, settings)
     feed_candidates, feed_status = load_permitted_json_feeds(DATA / "feeds.json", fx)
     candidates = dedupe(issue_candidates + feed_candidates)
     result_comments = {}
@@ -186,7 +219,7 @@ def main():
     save(DATA / "archive/offer-opportunities.json", offer_archive)
 
     source_status = {
-        "vinted": "manual saved-search + GitHub inbox only; no automated crawling",
+        "vinted": f"manual in-app verification only; live TTL {vinted_ttl:g}h; no public-web Vinted candidates",
         "fx": fx_error or f"OK ({fx.get('as_of', 'unknown')})",
         "github_inbox": inbox_error or f"OK ({len(issue_candidates)} candidate(s))",
         "approved_feeds": feed_status or {"status": "No enabled permitted feeds"},
@@ -200,7 +233,7 @@ def main():
         "new_buy_now": buy_count,
         "new_offer_only": offer_count,
         "new_watch": watch_count,
-        "archived": moved_a + moved_b,
+        "archived": moved_a + moved_b + moved_v1 + moved_v2,
         "source_status": source_status,
     })
     save(DATA / "scan-state.json", state)
