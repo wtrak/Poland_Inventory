@@ -1,0 +1,88 @@
+name: Inventory candidate
+description: Add a Vinted or other marketplace listing to the hourly analysis queue.
+title: "[INBOX] "
+body:
+  - type: input
+    id: listing_url
+    attributes:
+      label: Listing URL
+      placeholder: https://www.vinted.cz/items/...
+    validations:
+      required: true
+  - type: input
+    id: marketplace
+    attributes:
+      label: Marketplace
+      placeholder: Vinted Czechia
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: Czechia
+    validations:
+      required: true
+  - type: input
+    id: item_title
+    attributes:
+      label: Item title
+      placeholder: Jablonec glass brooch
+    validations:
+      required: true
+  - type: input
+    id: asking_price
+    attributes:
+      label: Asking price
+      placeholder: "130"
+    validations:
+      required: true
+  - type: dropdown
+    id: currency
+    attributes:
+      label: Currency
+      options: [PLN, EUR, CZK, HUF, RON, USD, GBP, BGN]
+    validations:
+      required: true
+  - type: input
+    id: conservative_resale
+    attributes:
+      label: Conservative U.S. resale (USD)
+      description: Use a believable resale number, not the highest comp.
+      placeholder: "30"
+    validations:
+      required: true
+  - type: input
+    id: comp_count
+    attributes:
+      label: Recent sold comp count
+      placeholder: "3"
+    validations:
+      required: true
+  - type: input
+    id: weight_g
+    attributes:
+      label: Estimated packed weight (g)
+      placeholder: "50"
+    validations:
+      required: true
+  - type: input
+    id: source_costs
+    attributes:
+      label: Source-side costs (USD)
+      description: Buyer protection + inbound shipping allocation to Poland. Use 0 if bundled/free.
+      placeholder: "1.00"
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      placeholder: Vintage Czech glass costume jewelry
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: Markings, condition, seller bundle opportunity, etc.
