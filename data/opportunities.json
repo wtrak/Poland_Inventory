@@ -215,5 +215,29 @@
     "github_issue": 15,
     "availability_verified_at": null,
     "automation_generated": true
+  },
+  {
+    "status": "BUY",
+    "score": 85,
+    "source": "Aukro Czechia",
+    "country": "Czechia",
+    "title": "Sběratelské skleněné knoflíčky č. 691 — 1940s–50s vintage Czech glass buttons",
+    "source_price": "14 CZK",
+    "source_price_usd": "$0.68",
+    "source_price_pln": "2.50 PLN",
+    "unit_cost": "14 CZK",
+    "unit_cost_usd": "$0.68",
+    "unit_cost_pln": "2.50 PLN",
+    "fx_date": "2026-08-20",
+    "category": "Vintage Czech / Czechoslovak glass buttons — small collectible sewing / jewelry components",
+    "expected_us_value": "Conservative U.S. resale input: $9.00; 4 recent sold comp(s)",
+    "why": "Automated intake score 85/100. Asking price plus estimated source-side costs is $1.18 against $9.00 conservative U.S. resale.",
+    "source_url": "https://aukro.cz/sberatelske-sklenene-knoflicky-c-691-7130111959",
+    "comp_urls": [],
+    "checked": "2026-08-21",
+    "notes": "Exact Aukro listing ID 7130111959 was live when checked 21 Aug 2026. It was posted 15 Aug 2026, currently had no bids at 14 CZK, and ends 22 Aug 2026 at 20:03. Seller identifies the buttons as 1940s–50s Czech glass, undamaged but dusty. IMPORTANT: standalone economics are weak because cheapest domestic shipping is 65 CZK plus Aukro fee; the $0.50 source-side-cost input assumes shipping is diluted across roughly 8+ small lots from this same seller, who currently has multiple similar glass-button auctions ending together. Recent sold evidence: 12 vintage Czech blue glass buttons sold for $9 on 11 Jan 2026; 3 Czech glass cat buttons sold for $10.99 with 5 sold; 3 large iridescent Czech glass buttons sold for $16.99 on 15 Apr 2026; 2 vintage 1950s Czech crystal glass buttons sold for $18.99 on 3 Apr 2026. Conservative resale is only $9 for this lot because the exact design/quantity visible in the Aukro photos may be more ordinary. WATCH / BUNDLE-BID only: bid only if several seller lots can be combined so shipping allocation stays low; prioritize molded, figural, large, iridescent, uranium/vaseline, Art Deco, and unusual colored examples.",
+    "github_issue": 17,
+    "availability_verified_at": null,
+    "automation_generated": true
   }
 ]
