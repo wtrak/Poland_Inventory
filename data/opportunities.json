@@ -143,5 +143,29 @@
     "github_issue": 13,
     "availability_verified_at": null,
     "automation_generated": true
+  },
+  {
+    "status": "WATCH",
+    "score": 75,
+    "source": "Bazoš Czechia",
+    "country": "Czechia",
+    "title": "Staré odznaky ČKD - 65 kusů.",
+    "source_price": "170 CZK",
+    "source_price_usd": "$8.22",
+    "source_price_pln": "30.40 PLN",
+    "unit_cost": "170 CZK",
+    "unit_cost_usd": "$8.22",
+    "unit_cost_pln": "30.40 PLN",
+    "fx_date": "2026-08-20",
+    "category": "Vintage Czechoslovak ČKD industrial / engineering / transport / company badges — breakup lot",
+    "expected_us_value": "Conservative U.S. resale input: $130.00; 4 recent sold comp(s)",
+    "why": "Automated intake score 75/100. Asking price plus estimated source-side costs is $18.22 against $130.00 conservative U.S. resale.",
+    "source_url": "https://ostatni.bazos.cz/inzeraty/sberatelskych-odznaku/",
+    "comp_urls": [],
+    "checked": "2026-08-21",
+    "notes": "Fresh Bazoš search results crawled within the past 5 days still show this exact offer dated 11 Aug 2026: 65 collectible ČKD badges for 170 CZK total (~2.62 CZK each). The search-index page is used because the exact Bazoš item URL was not exposed by the public result; click through and reconfirm the item is still live before payment. Economics are strong even with a deliberately conservative $130 total U.S. resale (~$2 per badge average) and an estimated $10 Czechia→Poland shipping allocation. Recent eBay market evidence includes a 1963 Sparta Praha CKD pin at $11.99 with 2 sold and another AC Sparta Praha CKD pin at $9.99 with 2 sold; individual ČKD engineering/transport badges also commonly list around $7-$10+. Treat this as a breakup/selectivity play: prioritize locomotive/tram, factory, engineering, anniversary, enamel and named ČKD divisions; generic duplicates may be lot-only inventory.",
+    "github_issue": 14,
+    "availability_verified_at": null,
+    "automation_generated": true
   }
 ]
