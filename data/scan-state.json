@@ -1,12 +1,12 @@
 {
-  "last_run_utc": "2026-08-21T03:17:43.480032+00:00",
-  "last_success_utc": "2026-08-21T03:17:43.480032+00:00",
+  "last_run_utc": "2026-08-21T04:55:18.522364+00:00",
+  "last_success_utc": "2026-08-21T04:55:18.522364+00:00",
   "last_fx_refresh": "2026-08-20",
-  "runs": 9,
+  "runs": 10,
   "candidates_seen": 1,
   "new_buy_now": 0,
-  "new_offer_only": 1,
-  "new_watch": 0,
+  "new_offer_only": 0,
+  "new_watch": 1,
   "archived": 0,
   "source_status": {
     "vinted": "manual in-app verification only; live TTL 4h; no public-web Vinted candidates",

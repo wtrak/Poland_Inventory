@@ -119,5 +119,29 @@
     "github_issue": 11,
     "availability_verified_at": null,
     "automation_generated": true
+  },
+  {
+    "status": "WATCH",
+    "score": 70,
+    "source": "Sbazar Czechia",
+    "country": "Czechia",
+    "title": "Odznaky strojírenství, 135 ks. — engineering/industrial badge lot",
+    "source_price": "290 CZK",
+    "source_price_usd": "$14.03",
+    "source_price_pln": "51.85 PLN",
+    "unit_cost": "290 CZK",
+    "unit_cost_usd": "$14.03",
+    "unit_cost_pln": "51.85 PLN",
+    "fx_date": "2026-08-20",
+    "category": "Vintage Czechoslovak industrial / engineering / factory advertising badges — breakup lot",
+    "expected_us_value": "Conservative U.S. resale input: $270.00; 3 recent sold comp(s)",
+    "why": "Automated intake score 70/100. Asking price plus estimated source-side costs is $24.03 against $270.00 conservative U.S. resale.",
+    "source_url": "https://www.sbazar.cz/inzerat/214212937-odznaky-strojirenstvi-135-ks",
+    "comp_urls": [],
+    "checked": "2026-08-21",
+    "notes": "Exact Sbazar listing is currently accessible and still offered at 290 CZK; description says 134 engineering-themed badges sold as one lot. Unit acquisition is about 2.16 CZK per badge before source-side transport. Conservative U.S. resale is intentionally only $270 total (~$2 per badge average), far below individual sold examples for identifiable Czechoslovak industrial/brand badges: Zetor 4011 tractor badge $14.99 with 1 sold; 1963 Sparta Praha CKD badge $11.99 with 2 sold; antique Zetor tractor badge $14.99 with 2 sold. Treat this as a breakup/selectivity play, not an assumption that every badge is individually collectible. Prioritize named Czech manufacturers, machinery, transport, factories, anniversaries, enamel, and unusual logos. Estimated source-side cost is a placeholder for Czech domestic/Czechia→Poland forwarding; confirm actual shipping before purchase.",
+    "github_issue": 13,
+    "availability_verified_at": null,
+    "automation_generated": true
   }
 ]
