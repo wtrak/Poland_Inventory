@@ -95,5 +95,29 @@
     "github_issue": 5,
     "availability_verified_at": null,
     "automation_generated": true
+  },
+  {
+    "status": "WATCH",
+    "score": 65,
+    "source": "Sbazar Czechia",
+    "country": "Czechia",
+    "title": "240kusů odznaků č.1 — mixed badge lot",
+    "source_price": "300 CZK",
+    "source_price_usd": "$14.51",
+    "source_price_pln": "53.64 PLN",
+    "unit_cost": "300 CZK",
+    "unit_cost_usd": "$14.51",
+    "unit_cost_pln": "53.64 PLN",
+    "fx_date": "2026-08-20",
+    "category": "Mixed vintage Czech/Czechoslovak badges and small pins — breakup lot",
+    "expected_us_value": "Conservative U.S. resale input: $240.00; 4 recent sold comp(s)",
+    "why": "Automated intake score 65/100. Asking price plus estimated source-side costs is $24.51 against $240.00 conservative U.S. resale.",
+    "source_url": "https://www.sbazar.cz/inzerat/227387521-240kusu-odznaku-c1",
+    "comp_urls": [],
+    "checked": "2026-08-21",
+    "notes": "Exact Sbazar offer was still live when checked 21 Aug 2026 at 300 CZK for 240 badges (~1.25 CZK each). Listing was last changed 29 Jan 2026, but seller has two additional active 240-piece lots (#2 and #3) also at 300 CZK, and Bazoš search results have shown the same 240-badge/300 CZK Pardubice offer being reposted, which supports current stock rather than a one-off stale index result. Conservative resale is only $240 total (~$1/badge average), far below recent individual sold examples: Czechoslovakia Legionnaire Congress Prague 1928 $17 (May 31 2026), Czechoslovakia Army 1st Class Parachutist $12 (Apr 17 2026), Czechoslovakia PPOVI I badge $9 (Feb 26 2026), and České dráhy railway logo pin $14 (Jun 18 2026). The thesis is bulk breakup/selectivity; do not assume all 240 are collectible. Inspect photos for enamel, named firms, transport, military, sporting clubs, events, and older Czechoslovak markings. Estimated $10 source-side cost covers Czech domestic/Czechia→Poland forwarding; confirm actual shipping before payment.",
+    "github_issue": 11,
+    "availability_verified_at": null,
+    "automation_generated": true
   }
 ]
