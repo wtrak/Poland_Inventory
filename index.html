@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Poland Inventory Radar</title>
 <style>
-:root{--bg:#0b1020;--card:#121a2c;--line:#26324a;--txt:#eef3ff;--muted:#9aabc8;--good:#4ade80;--warn:#fbbf24;--blue:#60a5fa;--offer:#f59e0b;--bad:#fb7185}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{padding:22px;border-bottom:1px solid var(--line);background:#0e1528}h1{margin:0 0 5px;font-size:25px}main{max-width:1450px;margin:auto;padding:18px}.muted{color:var(--muted)}a{color:#93c5fd}.toolbar,.tabs,.stats{display:flex;gap:9px;flex-wrap:wrap}.toolbar{margin-top:14px}.btn,.tabs button{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}.btn.primary{border-color:var(--blue)}.tabs{margin:18px 0 14px}.tabs button.active{border-color:var(--blue)}.stats{margin:16px 0}.stat{min-width:145px;flex:1;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:12px}.stat .n{font-size:20px;font-weight:800;margin-top:3px}.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px}.badge{display:inline-block;padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:700}.strong{color:var(--good)}.watch{color:var(--warn)}.offer{color:var(--offer)}table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);font-size:12px}input{width:100%;max-width:480px;background:#0f172a;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px}.pill{display:inline-block;margin:3px 4px 3px 0;padding:4px 8px;border-radius:999px;background:#0e1627;border:1px solid var(--line);color:var(--muted);font-size:11px;cursor:pointer}.pricebox{line-height:1.55}.pricebox .usd{color:#bfdbfe}.pricebox .pln{color:#bbf7d0}.offerbox{border-left:3px solid var(--offer);padding-left:8px}.maxbox{border-left:3px solid var(--bad);padding-left:8px}.statusline{margin-top:8px}.searchrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.error{color:var(--bad)}.termrow{margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0e1627}.termactions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.termrow .searchlink{color:#bfdbfe;text-decoration:none}.termrow .copybtn{font:inherit}.targetline{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px;font-size:12px}.target{color:var(--good);font-weight:700}.hardmax{color:var(--warn);font-weight:700}.resaleref{color:#bfdbfe}.termnote{margin-top:5px;color:var(--muted);font-size:11px}.vintednote{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#0e1627;margin-bottom:14px}@media(max-width:720px){.tablewrap{overflow-x:auto}th,td{min-width:120px}.stat{min-width:46%}}
+:root{--bg:#0b1020;--card:#121a2c;--line:#26324a;--txt:#eef3ff;--muted:#9aabc8;--good:#4ade80;--warn:#fbbf24;--blue:#60a5fa;--offer:#f59e0b;--bad:#fb7185}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{padding:22px;border-bottom:1px solid var(--line);background:#0e1528}h1{margin:0 0 5px;font-size:25px}main{max-width:1450px;margin:auto;padding:18px}.muted{color:var(--muted)}a{color:#93c5fd}.toolbar,.tabs,.stats{display:flex;gap:9px;flex-wrap:wrap}.toolbar{margin-top:14px}.btn,.tabs button{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}.btn.primary{border-color:var(--blue)}.tabs{margin:18px 0 14px}.tabs button.active{border-color:var(--blue)}.stats{margin:16px 0}.stat{min-width:145px;flex:1;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:12px}.stat .n{font-size:20px;font-weight:800;margin-top:3px}.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px}.badge{display:inline-block;padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:700}.strong{color:var(--good)}.watch{color:var(--warn)}.offer{color:var(--offer)}table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);font-size:12px}input,textarea,select{width:100%;background:#0f172a;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px}textarea{min-height:120px;resize:vertical}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field label{display:block;color:var(--muted);font-size:12px;margin:0 0 5px}.field.full{grid-column:1/-1}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chatgptnote{padding:12px;border:1px solid var(--good);border-radius:12px;background:#0e1627;margin-bottom:14px}.chatgptnote b{color:var(--good)}.statusgood{color:var(--good);font-weight:700}.statuswarn{color:var(--warn);font-weight:700}.promptbox{min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.45}.smallinput{max-width:100%}.pill{display:inline-block;margin:3px 4px 3px 0;padding:4px 8px;border-radius:999px;background:#0e1627;border:1px solid var(--line);color:var(--muted);font-size:11px;cursor:pointer}.pricebox{line-height:1.55}.pricebox .usd{color:#bfdbfe}.pricebox .pln{color:#bbf7d0}.offerbox{border-left:3px solid var(--offer);padding-left:8px}.maxbox{border-left:3px solid var(--bad);padding-left:8px}.statusline{margin-top:8px}.searchrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.error{color:var(--bad)}.termrow{margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0e1627}.termactions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.termrow .searchlink{color:#bfdbfe;text-decoration:none}.termrow .copybtn{font:inherit}.targetline{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px;font-size:12px}.target{color:var(--good);font-weight:700}.hardmax{color:var(--warn);font-weight:700}.resaleref{color:#bfdbfe}.termnote{margin-top:5px;color:var(--muted);font-size:11px}.vintednote{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#0e1627;margin-bottom:14px}@media(max-width:720px){.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.tablewrap{overflow-x:auto}th,td{min-width:120px}.stat{min-width:46%}}
 </style>
 </head><body>
 <header>
@@ -13,6 +13,7 @@
   <div class="toolbar">
     <a class="btn primary" href="https://github.com/wtrak/Poland_Inventory/issues/new?template=inventory-candidate.yml" target="_blank">+ Add Candidate</a>
     <a class="btn" href="https://github.com/wtrak/Poland_Inventory/actions/workflows/hourly-inventory-radar.yml" target="_blank">Run Scanner Now</a>
+    <button class="btn" id="openAnalyzer" type="button">Analyze with ChatGPT</button>
   </div>
 </header>
 <main>
@@ -29,6 +30,7 @@
   <button data-tab="opp">Live Opportunities</button>
   <button data-tab="offers">Offer Opportunities</button>
   <button data-tab="vinted">Vinted Search Center</button>
+  <button data-tab="chatgpt">ChatGPT Analysis</button>
   <button data-tab="sources">Source Markets</button>
 </div>
 <div class="searchrow"><input id="search" placeholder="Filter categories, listings, offers, countries, sites…"></div>
@@ -36,10 +38,57 @@
 <section id="opp" class="panel"><div class="tablewrap"><table><thead><tr><th>Score</th><th>Status</th><th>Listing</th><th>Price — Local / USD / PLN</th><th>Why it matters</th><th>Checked</th></tr></thead><tbody id="oppBody"></tbody></table></div></section>
 <section id="offers" class="panel"><div class="tablewrap"><table><thead><tr><th>Score</th><th>Listing</th><th>Ask</th><th>Send offer</th><th>Walk-away max</th><th>Reason</th><th>Checked</th></tr></thead><tbody id="offerBody"></tbody></table></div></section>
 <section id="vinted" class="panel"><div class="vintednote"><b>Price rule:</b> <span class="target">Target Buy</span> is the price we should actively hunt for. <span class="hardmax">Absolute Max</span> is the ceiling, not the goal. Prices are <b>per item</b> and should be reduced if Vinted buyer protection or inbound shipping cannot be spread across a bundle. Targets are designed around roughly 10% of conservative U.S. resale, with a hard ceiling around 15% or a stricter existing category rule. FX conversions refresh from the radar's daily rate file.<br><br><b>Search:</b> tap <b>Search</b> to open Vinted results sorted newest-first. If Android opens the Vinted app without the query, tap <b>Copy</b> and paste the term into Vinted's search bar.</div><div id="vintedGrid" class="grid"></div></section>
+<section id="chatgpt" class="panel">
+  <div class="chatgptnote"><b>Uses your ChatGPT subscription — no OpenAI API call.</b> This page only prepares the listing packet, copies it to your clipboard, and opens ChatGPT (or your saved ChatGPT Project). Attach the listing photos in ChatGPT, paste the packet, and send. Nothing on this page sends data to OpenAI.</div>
+  <div class="grid">
+    <article class="card">
+      <h3>Listing packet</h3>
+      <div class="formgrid">
+        <div class="field full"><label>Listing title / what is it?</label><input id="aiTitle" placeholder="e.g. Approx. 400–500 vintage keychains"></div>
+        <div class="field"><label>Asking price</label><input id="aiAsk" placeholder="270"></div>
+        <div class="field"><label>Currency</label><select id="aiCurrency"><option>PLN</option><option>EUR</option><option>USD</option><option>CZK</option><option>HUF</option><option>RON</option><option>SEK</option><option>DKK</option><option>GBP</option></select></div>
+        <div class="field"><label>Approx. quantity</label><input id="aiQty" placeholder="400–500"></div>
+        <div class="field"><label>Inbound shipping to Poland</label><input id="aiInbound" placeholder="0 or unknown"></div>
+        <div class="field"><label>Total/estimated weight</label><input id="aiWeight" placeholder="e.g. 12 kg or unknown"></div>
+        <div class="field"><label>Source / country</label><input id="aiSource" placeholder="e.g. Vinted Poland"></div>
+        <div class="field full"><label>Listing URL</label><input id="aiUrl" placeholder="https://..."></div>
+        <div class="field full"><label>Notes / seller description</label><textarea id="aiNotes" placeholder="Paste any useful description, dimensions, condition, count claims, etc."></textarea></div>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="buildCopyBtn" type="button">Build + Copy Packet</button>
+        <button class="btn" id="openChatGPTBtn" type="button">Open ChatGPT</button>
+        <button class="btn" id="clearAnalyzerBtn" type="button">Clear</button>
+      </div>
+      <div id="aiStatus" class="muted statusline">Add the photos directly in ChatGPT after opening it.</div>
+    </article>
+    <article class="card">
+      <h3>Prepared ChatGPT request</h3>
+      <textarea id="aiPrompt" class="promptbox" placeholder="Your analysis packet will appear here."></textarea>
+      <p class="muted">You can edit this before sending. The prompt tells ChatGPT to use its built-in web search when current market evidence is useful.</p>
+    </article>
+    <article class="card">
+      <h3>Use a dedicated ChatGPT Project</h3>
+      <p class="muted">Create a ChatGPT Project such as <b>Poland Inventory Scout</b>, paste the project instructions once, then save that Project's URL here. The URL stays only in this browser via localStorage.</p>
+      <div class="field"><label>ChatGPT Project URL</label><input id="chatgptProjectUrl" class="smallinput" placeholder="https://chatgpt.com/g/... or project URL"></div>
+      <div class="actions">
+        <button class="btn" id="saveProjectUrlBtn" type="button">Save Project Link</button>
+        <button class="btn" id="copyProjectInstructionsBtn" type="button">Copy Project Instructions</button>
+      </div>
+      <div id="projectStatus" class="muted statusline"></div>
+    </article>
+    <article class="card">
+      <h3>Zero-API architecture</h3>
+      <p><b>Automated radar:</b> GitHub Actions + rule-based scoring + FX refresh.</p>
+      <p><b>Valuation/research:</b> your normal ChatGPT subscription, opened interactively from this dashboard.</p>
+      <p><b>Paid OpenAI API:</b> not required and not used by this workflow.</p>
+      <p class="muted">This intentionally keeps unattended AI automation out of the dashboard. The expensive reasoning happens only when you choose a listing and send it through ChatGPT.</p>
+    </article>
+  </div>
+</section>
 <section id="sources" class="panel"><div id="sourceGrid" class="grid"></div></section>
 </main>
 <script>
-let datasets={buy:[],opp:[],offers:[],sources:[],vinted:[],state:{},fx:{rates:{}}};
+let datasets={buy:[],opp:[],offers:[],sources:[],vinted:[],state:{},fx:{rates:{}},settings:{}};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const triple=(local,usd,pln,cls='')=>`<div class="pricebox ${cls}"><b>${esc(local||'—')}</b><br><span class="usd">${esc(usd||'')}</span><br><span class="pln">${esc(pln||'')}</span></div>`;
 const fmtTime=s=>{if(!s)return 'Not run yet';try{return new Date(s).toLocaleString()}catch{return s}};
@@ -49,9 +98,9 @@ const moneyFromUsd=(usd,currency)=>{const rate=datasets.fx?.rates?.[currency]?.u
 const plnFromUsd=usd=>{const rate=datasets.fx?.rates?.USD?.pln_per_unit;return rate?`${(Number(usd)*Number(rate)).toFixed(2)} PLN`:'—'};
 async function getJson(path,fallback){try{const r=await fetch(path+'?v='+Date.now());if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){return fallback}}
 async function load(){
- const [buy,opp,offers,sources,vinted,state,fx]=await Promise.all([
-  getJson('data/buy-list.json',[]),getJson('data/opportunities.json',[]),getJson('data/offer-opportunities.json',[]),getJson('data/sources.json',[]),getJson('data/vinted-searches.json',[]),getJson('data/scan-state.json',{}),getJson('data/fx-rates.json',{rates:{}})]);
- datasets={buy,opp,offers,sources,vinted,state,fx};
+ const [buy,opp,offers,sources,vinted,state,fx,settings]=await Promise.all([
+  getJson('data/buy-list.json',[]),getJson('data/opportunities.json',[]),getJson('data/offer-opportunities.json',[]),getJson('data/sources.json',[]),getJson('data/vinted-searches.json',[]),getJson('data/scan-state.json',{}),getJson('data/fx-rates.json',{rates:{}}),getJson('data/settings.json',{})]);
+ datasets={buy,opp,offers,sources,vinted,state,fx,settings};
  document.querySelector('#lastScan').textContent=fmtTime(state.last_success_utc);
  document.querySelector('#newBuy').textContent=state.new_buy_now??0;document.querySelector('#newOffers').textContent=state.new_offer_only??0;document.querySelector('#seen').textContent=state.candidates_seen??0;document.querySelector('#archived').textContent=state.archived??0;
  const ss=state.source_status||{};document.querySelector('#sourceStatus').textContent=`FX: ${typeof ss.fx==='string'?ss.fx:'—'} · Vinted: ${ss.vinted||'saved-search/manual intake'} · Inbox: ${ss.github_inbox||'—'}`;
@@ -59,13 +108,125 @@ async function load(){
 }
 function render(){const q=document.querySelector('#search').value.toLowerCase();const hit=x=>JSON.stringify(x).toLowerCase().includes(q);
  document.querySelector('#buyGrid').innerHTML=datasets.buy.filter(hit).map(x=>`<article class="card"><span class="badge strong">${esc(x.priority)}</span><h3>${esc(x.category)}</h3><p><b>Target:</b> ${esc(x.target_buy_price_local)}<br><b>Max:</b> ${esc(x.max_buy_price_local)}<br><b>U.S. resale:</b> ${esc(x.good_us_sold_band_usd)}<br><b>Shipping:</b> ${esc(x.shipping_grade)}</p><div>${(x.what_to_seek||[]).map(t=>`<span class="pill">${esc(t)}</span>`).join('')}</div></article>`).join('');
- document.querySelector('#oppBody').innerHTML=[...datasets.opp].sort((a,b)=>(b.score||0)-(a.score||0)).filter(hit).map(x=>`<tr><td><b>${esc(x.score)}</b></td><td><span class="badge ${String(x.status).includes('STRONG')?'strong':'watch'}">${esc(x.status)}</span></td><td><a href="${esc(x.source_url)}" target="_blank">${esc(x.title)}</a><br><span class="muted">${esc(x.source)} · ${esc(x.country)}</span></td><td>${triple(x.source_price,x.source_price_usd,x.source_price_pln)}</td><td>${esc(x.why)}<br><span class="muted">${esc(x.expected_us_value||'')}</span><br><span class="muted">${esc(x.notes||'')}</span></td><td>${esc(x.checked)}${x.fx_date?`<br><span class="muted">FX ${esc(x.fx_date)}</span>`:''}</td></tr>`).join('');
- document.querySelector('#offerBody').innerHTML=[...datasets.offers].sort((a,b)=>(b.score_if_accepted||0)-(a.score_if_accepted||0)).filter(hit).map(x=>`<tr><td><b>${esc(x.score_if_accepted)}</b><br><span class="badge offer">${esc(x.status)}</span></td><td><a href="${esc(x.source_url)}" target="_blank">${esc(x.title)}</a><br><span class="muted">${esc(x.source)} · ${esc(x.country)}</span></td><td>${triple(x.asking_price_local,x.asking_price_usd,x.asking_price_pln)}</td><td>${triple(x.suggested_offer_local,x.suggested_offer_usd,x.suggested_offer_pln,'offerbox')}<span class="muted">${esc(x.offer_discount_from_ask||'')} below ask</span></td><td>${triple(x.walk_away_max_local,x.walk_away_max_usd,x.walk_away_max_pln,'maxbox')}<span class="muted">Do not exceed</span></td><td>${esc(x.why_offer)}<br><span class="muted">${esc(x.source_side_cost_note||'')}</span></td><td>${esc(x.checked)}</td></tr>`).join('');
+ document.querySelector('#oppBody').innerHTML=[...datasets.opp].sort((a,b)=>(b.score||0)-(a.score||0)).filter(hit).map(x=>`<tr><td><b>${esc(x.score)}</b></td><td><span class="badge ${String(x.status).includes('STRONG')?'strong':'watch'}">${esc(x.status)}</span></td><td><a href="${esc(x.source_url)}" target="_blank">${esc(x.title)}</a><br><span class="muted">${esc(x.source)} · ${esc(x.country)}</span><br><button type="button" class="pill analyze-listing" data-url="${esc(x.source_url)}">Analyze with ChatGPT</button></td><td>${triple(x.source_price,x.source_price_usd,x.source_price_pln)}</td><td>${esc(x.why)}<br><span class="muted">${esc(x.expected_us_value||'')}</span><br><span class="muted">${esc(x.notes||'')}</span></td><td>${esc(x.checked)}${x.fx_date?`<br><span class="muted">FX ${esc(x.fx_date)}</span>`:''}</td></tr>`).join('');
+ document.querySelector('#offerBody').innerHTML=[...datasets.offers].sort((a,b)=>(b.score_if_accepted||0)-(a.score_if_accepted||0)).filter(hit).map(x=>`<tr><td><b>${esc(x.score_if_accepted)}</b><br><span class="badge offer">${esc(x.status)}</span></td><td><a href="${esc(x.source_url)}" target="_blank">${esc(x.title)}</a><br><span class="muted">${esc(x.source)} · ${esc(x.country)}</span><br><button type="button" class="pill analyze-listing" data-url="${esc(x.source_url)}">Analyze with ChatGPT</button></td><td>${triple(x.asking_price_local,x.asking_price_usd,x.asking_price_pln)}</td><td>${triple(x.suggested_offer_local,x.suggested_offer_usd,x.suggested_offer_pln,'offerbox')}<span class="muted">${esc(x.offer_discount_from_ask||'')} below ask</span></td><td>${triple(x.walk_away_max_local,x.walk_away_max_usd,x.walk_away_max_pln,'maxbox')}<span class="muted">Do not exceed</span></td><td>${esc(x.why_offer)}<br><span class="muted">${esc(x.source_side_cost_note||'')}</span></td><td>${esc(x.checked)}</td></tr>`).join('');
  document.querySelector('#vintedGrid').innerHTML=datasets.vinted.filter(hit).map(x=>`<article class="card"><h3>${esc(x.country)}</h3><a href="${esc(x.site)}" target="_blank">Open Vinted ${esc(x.country)} home</a><div style="margin-top:10px">${(x.searches||[]).map(s=>`<div class="termrow"><div class="termactions"><a class="pill searchlink" href="${esc(vintedSearchUrl(x.site,s.term))}" target="_blank" rel="noopener">Search: ${esc(s.term)}</a><button type="button" class="pill copybtn" data-term="${esc(s.term)}">Copy</button></div><div class="targetline"><span class="target">Target ≤ ${esc(moneyFromUsd(s.target_usd,x.currency))} / $${Number(s.target_usd).toFixed(2)} / ${esc(plnFromUsd(s.target_usd))}</span><span class="hardmax">Max ${esc(moneyFromUsd(s.max_usd,x.currency))} / $${Number(s.max_usd).toFixed(2)} / ${esc(plnFromUsd(s.max_usd))}</span><span class="resaleref">U.S. ref ~$${Number(s.conservative_us_resale_usd).toFixed(0)}</span></div><div class="termnote">${esc(s.note||'')}</div></div>`).join('')}</div></article>`).join('');
  document.querySelector('#sourceGrid').innerHTML=datasets.sources.filter(hit).map(x=>`<article class="card"><span class="badge">${esc(x.priority)}</span><h3><a href="${esc(x.url)}" target="_blank">${esc(x.site)}</a></h3><div class="muted">${esc(x.country)}</div><p>${esc(x.notes)}</p><div>${(x.search_terms||[]).map(t=>`<span class="pill">${esc(t)}</span>`).join('')}</div></article>`).join('');
 }
-document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button,.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelector('#'+b.dataset.tab).classList.add('active')});
+function selectTab(id){
+ document.querySelectorAll('.tabs button,.panel').forEach(x=>x.classList.remove('active'));
+ const b=document.querySelector(`.tabs button[data-tab="${id}"]`);if(b)b.classList.add('active');
+ const p=document.querySelector('#'+id);if(p)p.classList.add('active');
+}
+function setAiStatus(msg,good=true){const el=document.querySelector('#aiStatus');el.textContent=msg;el.className=(good?'statusgood':'statuswarn')+' statusline'}
+function setProjectStatus(msg,good=true){const el=document.querySelector('#projectStatus');el.textContent=msg;el.className=(good?'statusgood':'statuswarn')+' statusline'}
+function analyzerValues(){return{
+ title:document.querySelector('#aiTitle').value.trim(),
+ ask:document.querySelector('#aiAsk').value.trim(),
+ currency:document.querySelector('#aiCurrency').value,
+ qty:document.querySelector('#aiQty').value.trim(),
+ inbound:document.querySelector('#aiInbound').value.trim(),
+ weight:document.querySelector('#aiWeight').value.trim(),
+ source:document.querySelector('#aiSource').value.trim(),
+ url:document.querySelector('#aiUrl').value.trim(),
+ notes:document.querySelector('#aiNotes').value.trim()
+}}
+function buildChatGPTPrompt(){
+ const v=analyzerValues();
+ const a=datasets.settings?.us_auction_model||{};
+ const s=datasets.settings?.poland_to_us_shipping||{};
+ const lines=[
+  'Analyze this sourcing candidate for my Poland → Arkansas U.S. auction inventory business.',
+  '',
+  'LISTING',
+  `Title/item: ${v.title||'Unknown — identify from attached photos'}`,
+  `Asking price: ${v.ask||'unknown'} ${v.currency||''}`,
+  `Approx. quantity: ${v.qty||'unknown'}`,
+  `Inbound shipping to Poland: ${v.inbound||'unknown'}`,
+  `Estimated total weight: ${v.weight||'unknown'}`,
+  `Source: ${v.source||'unknown'}`,
+  `Listing URL: ${v.url||'not provided'}`,
+  `Seller notes: ${v.notes||'none provided'}`,
+  '',
+  'MY AUCTION ECONOMICS',
+  `Minimum hammer bid: ${Number(a.minimum_bid_usd??2.5).toFixed(2)}`,
+  `Buyer premium: ${Number(a.buyer_premium_pct??21)}%`,
+  `Small-item fee: ${Number(a.small_item_fee_usd??1).toFixed(2)} per item`,
+  `Order fee: ${Number(a.order_fee_usd??5).toFixed(2)} per customer order`,
+  `Order shipping fee: ${Number(a.order_shipping_fee_usd??1).toFixed(2)} per customer order`,
+  'Actual U.S. postage is charged to the customer separately.',
+  `Reference Poland→U.S. consolidation: ${s.reference_box_pln??'verify current'} PLN for up to ${s.max_box_kg??25} kg; use this only as a working assumption and verify current rates when material.`,
+  '',
+  'WHAT I NEED',
+  '1. Inspect every attached photo carefully. Estimate count and weight if they are uncertain.',
+  '2. Identify the category and call out any visible pieces/brands/designs that may be materially better than the rest.',
+  '3. Use ChatGPT web search when current market evidence would materially improve the decision. Prefer actual sold/completed evidence; clearly distinguish SOLD prices from asking prices.',
+  '4. Estimate acquisition cost per item, Poland→Arkansas freight allocation, and conservative landed cost.',
+  '5. Estimate realistic U.S. auction behavior: likely individual lots vs grouped lots, probable sell-through, and what percentage only needs the minimum bid to work.',
+  '6. Give exact BUY / OFFER / PASS advice, an opening offer and a hard maximum in the source currency. Use USD as the primary reporting currency.',
+  '7. Calculate break-even using my auction economics. Do not assume every item sells.',
+  '8. Rate the opportunity 1–10 and explain the biggest risk in one sentence.',
+  '9. If the seller/collection itself looks more valuable than this one listing, tell me what other inventory I should ask the seller for.',
+  '',
+  'I am attaching the listing photos to this ChatGPT message. If no photos are attached, tell me to upload them before making a visual valuation.'
+ ];
+ const prompt=lines.join('\n');document.querySelector('#aiPrompt').value=prompt;return prompt
+}
+async function copyText(value){
+ try{await navigator.clipboard.writeText(value);return true}catch{return false}
+}
+function getChatGPTUrl(){
+ const saved=localStorage.getItem('polandInventoryChatGPTProjectUrl')||'';
+ return /^https:\/\/chatgpt\.com\//i.test(saved)?saved:'https://chatgpt.com/';
+}
+async function buildAndCopy(){
+ const prompt=buildChatGPTPrompt();const ok=await copyText(prompt);
+ setAiStatus(ok?'Packet copied. Open ChatGPT, attach the photos, paste, and send.':'Packet built. Clipboard access was blocked; copy the text manually.',ok)
+}
+async function openChatGPT(){
+ const prompt=document.querySelector('#aiPrompt').value.trim()||buildChatGPTPrompt();
+ const ok=await copyText(prompt);
+ window.open(getChatGPTUrl(),'_blank','noopener');
+ setAiStatus(ok?'ChatGPT opened and the packet is copied. Attach photos, paste, send.':'ChatGPT opened. Copy the prepared packet manually, attach photos, and send.',ok)
+}
+function clearAnalyzer(){
+ ['aiTitle','aiAsk','aiQty','aiInbound','aiWeight','aiSource','aiUrl','aiNotes','aiPrompt'].forEach(id=>document.querySelector('#'+id).value='');
+ document.querySelector('#aiCurrency').value='PLN';setAiStatus('Cleared. Add the photos directly in ChatGPT after opening it.',true)
+}
+function fillFromListing(item){
+ document.querySelector('#aiTitle').value=item.title||'';
+ const raw=item.asking_price_local||item.source_price||'';
+ const m=String(raw).match(/([0-9]+(?:[.,][0-9]+)?)/);document.querySelector('#aiAsk').value=m?m[1].replace(',','.'):'';
+ const cm=String(raw).match(/\b(PLN|EUR|USD|CZK|HUF|RON|SEK|DKK|GBP)\b/i);if(cm)document.querySelector('#aiCurrency').value=cm[1].toUpperCase();
+ document.querySelector('#aiSource').value=[item.source,item.country].filter(Boolean).join(' · ');
+ document.querySelector('#aiUrl').value=item.source_url||'';
+ document.querySelector('#aiNotes').value=[item.notes,item.why,item.why_offer,item.expected_us_value].filter(Boolean).join('\n');
+ selectTab('chatgpt');buildChatGPTPrompt();setAiStatus('Listing loaded. Add/adjust quantity or weight, then attach its photos in ChatGPT.',true)
+}
+function restoreProjectUrl(){
+ const saved=localStorage.getItem('polandInventoryChatGPTProjectUrl')||'';
+ document.querySelector('#chatgptProjectUrl').value=saved;
+ if(saved)setProjectStatus('Saved project link will be used by Open ChatGPT.',true)
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>selectTab(b.dataset.tab));
+document.querySelector('#openAnalyzer').onclick=()=>selectTab('chatgpt');
+document.querySelector('#buildCopyBtn').onclick=buildAndCopy;
+document.querySelector('#openChatGPTBtn').onclick=openChatGPT;
+document.querySelector('#clearAnalyzerBtn').onclick=clearAnalyzer;
+document.querySelector('#saveProjectUrlBtn').onclick=()=>{
+ const v=document.querySelector('#chatgptProjectUrl').value.trim();
+ if(v&&!/^https:\/\/chatgpt\.com\//i.test(v)){setProjectStatus('Use a chatgpt.com project/chat URL.',false);return}
+ localStorage.setItem('polandInventoryChatGPTProjectUrl',v);setProjectStatus(v?'Project link saved in this browser.':'Project link cleared; ChatGPT home will open instead.',true)
+};
+document.querySelector('#copyProjectInstructionsBtn').onclick=async()=>{
+ try{const r=await fetch('docs/chatgpt-project-instructions.txt?v='+Date.now());if(!r.ok)throw new Error(r.status);const t=await r.text();const ok=await copyText(t);setProjectStatus(ok?'Project instructions copied. Paste them into ChatGPT Project settings.':'Could not access clipboard; open docs/chatgpt-project-instructions.txt and copy manually.',ok)}
+ catch{setProjectStatus('Could not load the project instructions file.',false)}
+};
 document.querySelector('#search').addEventListener('input',render);
-document.addEventListener('click',async e=>{const b=e.target.closest('.copybtn');if(!b)return;const term=b.dataset.term||'';try{await navigator.clipboard.writeText(term);const old=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=old,1200)}catch{window.prompt('Copy this Vinted search term:',term)}});
+document.addEventListener('click',async e=>{
+ const a=e.target.closest('.analyze-listing');if(a){const u=a.dataset.url||'';const item=[...datasets.opp,...datasets.offers].find(x=>String(x.source_url||'')===u);if(item)fillFromListing(item);return}
+ const b=e.target.closest('.copybtn');if(!b)return;const term=b.dataset.term||'';try{await navigator.clipboard.writeText(term);const old=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=old,1200)}catch{window.prompt('Copy this Vinted search term:',term)}
+});
+restoreProjectUrl();
 load();
 </script></body></html>
