@@ -12,6 +12,19 @@ The model is not traditional retail arbitrage. The priority is merchandise that:
 4. is easy for an auction buyer to identify and relist,
 5. has enough source-market supply to repeat.
 
+## ChatGPT subscription workflow
+
+The dashboard now includes **ChatGPT Analysis**, designed to use the user's existing ChatGPT subscription instead of the separately billed OpenAI API.
+
+- No OpenAI API key is required.
+- The dashboard prepares and copies a structured listing-analysis packet.
+- **Open ChatGPT** opens ChatGPT or a saved ChatGPT Project URL.
+- Listing photos are attached directly in ChatGPT so normal ChatGPT vision, web search and reasoning can be used subject to the user's plan limits.
+- Live/Offer Opportunity rows can be preloaded into the ChatGPT Analysis form.
+- Project instructions are stored in `docs/chatgpt-project-instructions.txt`.
+
+See `docs/CHATGPT_PLUS_WORKFLOW.md` for setup and usage.
+
 ## Hourly radar
 
 The repository includes a GitHub Actions workflow scheduled for **17 minutes past every hour** plus a manual `workflow_dispatch` Run button.
