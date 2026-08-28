@@ -185,8 +185,8 @@ async function buildAndCopy(){
 }
 async function openChatGPT(){
  const prompt=document.querySelector('#aiPrompt').value.trim()||buildChatGPTPrompt();
- const ok=await copyText(prompt);
  window.open(getChatGPTUrl(),'_blank','noopener');
+ const ok=await copyText(prompt);
  setAiStatus(ok?'ChatGPT opened and the packet is copied. Attach photos, paste, send.':'ChatGPT opened. Copy the prepared packet manually, attach photos, and send.',ok)
 }
 function clearAnalyzer(){
