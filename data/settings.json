@@ -1,7 +1,7 @@
 {
-  "target_source_cost_pct": 0.10,
+  "target_source_cost_pct": 0.1,
   "walk_away_source_cost_pct": 0.15,
-  "offer_proximity_multiplier": 1.50,
+  "offer_proximity_multiplier": 1.5,
   "preferred_weight_g": 200,
   "stale_after_days": 7,
   "archive_after_days": 21,
@@ -10,5 +10,25 @@
   "vinted_manual_verification_required": true,
   "vinted_max_confirmation_age_hours": 4,
   "vinted_live_ttl_hours": 4,
-  "notes": "Offer math is based on conservative U.S. resale value and source-side costs. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15%. Vinted listings are never accepted from public web indexing; they require fresh manual in-app availability confirmation. A confirmed Vinted listing remains in the live feed for no more than 4 hours unless re-confirmed."
+  "notes": "Offer math is based on conservative U.S. resale value and source-side costs. Suggested offer targets ~10% all-in acquisition cost; walk-away max targets ~15%. Vinted listings are never accepted from public web indexing; they require fresh manual in-app availability confirmation. A confirmed Vinted listing remains in the live feed for no more than 4 hours unless re-confirmed.",
+  "us_auction_model": {
+    "minimum_bid_usd": 2.5,
+    "buyer_premium_pct": 21,
+    "small_item_fee_usd": 1,
+    "order_fee_usd": 5,
+    "order_shipping_fee_usd": 1,
+    "domestic_postage_pass_through": true
+  },
+  "poland_to_us_shipping": {
+    "reference_box_pln": 609,
+    "max_box_kg": 25,
+    "reference_only": true,
+    "notes": "Working consolidation assumption for prompt math. Verify current Meest rate when exact freight materially changes a buy decision."
+  },
+  "chatgpt_subscription_workflow": {
+    "enabled": true,
+    "paid_openai_api_required": false,
+    "default_url": "https://chatgpt.com/",
+    "notes": "Dashboard only prepares/copies analysis packets and opens ChatGPT. It does not call the OpenAI API."
+  }
 }
