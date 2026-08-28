@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Poland Inventory Radar</title>
 <style>
-:root{--bg:#0b1020;--card:#121a2c;--line:#26324a;--txt:#eef3ff;--muted:#9aabc8;--good:#4ade80;--warn:#fbbf24;--blue:#60a5fa;--offer:#f59e0b;--bad:#fb7185}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{padding:22px;border-bottom:1px solid var(--line);background:#0e1528}h1{margin:0 0 5px;font-size:25px}main{max-width:1450px;margin:auto;padding:18px}.muted{color:var(--muted)}a{color:#93c5fd}.toolbar,.tabs,.stats{display:flex;gap:9px;flex-wrap:wrap}.toolbar{margin-top:14px}.btn,.tabs button{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}.btn.primary{border-color:var(--blue)}.tabs{margin:18px 0 14px}.tabs button.active{border-color:var(--blue)}.stats{margin:16px 0}.stat{min-width:145px;flex:1;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:12px}.stat .n{font-size:20px;font-weight:800;margin-top:3px}.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px}.badge{display:inline-block;padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:700}.strong{color:var(--good)}.watch{color:var(--warn)}.offer{color:var(--offer)}table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);font-size:12px}input,textarea,select{width:100%;background:#0f172a;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px}textarea{min-height:120px;resize:vertical}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field label{display:block;color:var(--muted);font-size:12px;margin:0 0 5px}.field.full{grid-column:1/-1}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chatgptnote{padding:12px;border:1px solid var(--good);border-radius:12px;background:#0e1627;margin-bottom:14px}.chatgptnote b{color:var(--good)}.statusgood{color:var(--good);font-weight:700}.statuswarn{color:var(--warn);font-weight:700}.promptbox{min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.45}.smallinput{max-width:100%}.pill{display:inline-block;margin:3px 4px 3px 0;padding:4px 8px;border-radius:999px;background:#0e1627;border:1px solid var(--line);color:var(--muted);font-size:11px;cursor:pointer}.pricebox{line-height:1.55}.pricebox .usd{color:#bfdbfe}.pricebox .pln{color:#bbf7d0}.offerbox{border-left:3px solid var(--offer);padding-left:8px}.maxbox{border-left:3px solid var(--bad);padding-left:8px}.statusline{margin-top:8px}.searchrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.error{color:var(--bad)}.termrow{margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0e1627}.termactions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.termrow .searchlink{color:#bfdbfe;text-decoration:none}.termrow .copybtn{font:inherit}.targetline{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px;font-size:12px}.target{color:var(--good);font-weight:700}.hardmax{color:var(--warn);font-weight:700}.resaleref{color:#bfdbfe}.termnote{margin-top:5px;color:var(--muted);font-size:11px}.vintednote{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#0e1627;margin-bottom:14px}@media(max-width:720px){.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.tablewrap{overflow-x:auto}th,td{min-width:120px}.stat{min-width:46%}}
+:root{--bg:#0b1020;--card:#121a2c;--line:#26324a;--txt:#eef3ff;--muted:#9aabc8;--good:#4ade80;--warn:#fbbf24;--blue:#60a5fa;--offer:#f59e0b;--bad:#fb7185}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{padding:22px;border-bottom:1px solid var(--line);background:#0e1528}h1{margin:0 0 5px;font-size:25px}main{max-width:1450px;margin:auto;padding:18px}.muted{color:var(--muted)}a{color:#93c5fd}.toolbar,.tabs,.stats{display:flex;gap:9px;flex-wrap:wrap}.toolbar{margin-top:14px}.btn,.tabs button{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}.btn.primary{border-color:var(--blue)}.tabs{margin:18px 0 14px}.tabs button.active{border-color:var(--blue)}.stats{margin:16px 0}.stat{min-width:145px;flex:1;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:12px}.stat .n{font-size:20px;font-weight:800;margin-top:3px}.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px}.badge{display:inline-block;padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:700}.strong{color:var(--good)}.watch{color:var(--warn)}.offer{color:var(--offer)}table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);font-size:12px}input,textarea,select{width:100%;background:#0f172a;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px}textarea{min-height:120px;resize:vertical}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field label{display:block;color:var(--muted);font-size:12px;margin:0 0 5px}.field.full{grid-column:1/-1}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chatgptnote{padding:12px;border:1px solid var(--good);border-radius:12px;background:#0e1627;margin-bottom:14px}.chatgptnote b{color:var(--good)}.statusgood{color:var(--good);font-weight:700}.statuswarn{color:var(--warn);font-weight:700}.promptbox{min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.45}.smallinput{max-width:100%}.dropzone{border:1px dashed var(--line);border-radius:12px;padding:14px;text-align:center;background:#0e1627;cursor:pointer}.dropzone.drag{border-color:var(--blue)}.photoactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.photogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-top:10px}.photocard{border:1px solid var(--line);border-radius:10px;padding:7px;background:#0e1627}.photocard img{display:block;width:100%;height:110px;object-fit:contain;background:#09101d;border-radius:7px}.photocard .cap{font-size:10px;color:var(--muted);margin-top:5px;word-break:break-word}.pill{display:inline-block;margin:3px 4px 3px 0;padding:4px 8px;border-radius:999px;background:#0e1627;border:1px solid var(--line);color:var(--muted);font-size:11px;cursor:pointer}.pricebox{line-height:1.55}.pricebox .usd{color:#bfdbfe}.pricebox .pln{color:#bbf7d0}.offerbox{border-left:3px solid var(--offer);padding-left:8px}.maxbox{border-left:3px solid var(--bad);padding-left:8px}.statusline{margin-top:8px}.searchrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.error{color:var(--bad)}.termrow{margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0e1627}.termactions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.termrow .searchlink{color:#bfdbfe;text-decoration:none}.termrow .copybtn{font:inherit}.targetline{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px;font-size:12px}.target{color:var(--good);font-weight:700}.hardmax{color:var(--warn);font-weight:700}.resaleref{color:#bfdbfe}.termnote{margin-top:5px;color:var(--muted);font-size:11px}.vintednote{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#0e1627;margin-bottom:14px}@media(max-width:720px){.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.tablewrap{overflow-x:auto}th,td{min-width:120px}.stat{min-width:46%}}
 </style>
 </head><body>
 <header>
@@ -53,6 +53,18 @@
         <div class="field"><label>Source / country</label><input id="aiSource" placeholder="e.g. Vinted Poland"></div>
         <div class="field full"><label>Listing URL</label><input id="aiUrl" placeholder="https://..."></div>
         <div class="field full"><label>Notes / seller description</label><textarea id="aiNotes" placeholder="Paste any useful description, dimensions, condition, count claims, etc."></textarea></div>
+        <div class="field full">
+          <label>Photos</label>
+          <input id="aiPhotos" type="file" accept="image/*" multiple hidden>
+          <div id="photoDrop" class="dropzone">Drop listing photos here, click to choose them, or paste screenshots with Ctrl/Cmd+V.</div>
+          <div class="photoactions">
+            <button class="btn" id="copyContactSheetBtn" type="button">Copy Contact Sheet</button>
+            <button class="btn" id="openLensBtn" type="button">Open Google Lens</button>
+            <button class="btn" id="clearPhotosBtn" type="button">Clear Photos</button>
+          </div>
+          <div id="photoHelp" class="muted statusline">Photos stay in your browser. For Google Lens in Chrome, right-click a preview (or long-press on Android) and choose Search with Google Lens.</div>
+          <div id="photoGrid" class="photogrid"></div>
+        </div>
       </div>
       <div class="actions">
         <button class="btn primary" id="buildCopyBtn" type="button">Build + Copy Packet</button>
@@ -88,7 +100,7 @@
 <section id="sources" class="panel"><div id="sourceGrid" class="grid"></div></section>
 </main>
 <script>
-let datasets={buy:[],opp:[],offers:[],sources:[],vinted:[],state:{},fx:{rates:{}},settings:{}};
+let datasets={buy:[],opp:[],offers:[],sources:[],vinted:[],state:{},fx:{rates:{}},settings:{}};let analysisPhotos=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const triple=(local,usd,pln,cls='')=>`<div class="pricebox ${cls}"><b>${esc(local||'—')}</b><br><span class="usd">${esc(usd||'')}</span><br><span class="pln">${esc(pln||'')}</span></div>`;
 const fmtTime=s=>{if(!s)return 'Not run yet';try{return new Date(s).toLocaleString()}catch{return s}};
@@ -118,6 +130,56 @@ function selectTab(id){
  const b=document.querySelector(`.tabs button[data-tab="${id}"]`);if(b)b.classList.add('active');
  const p=document.querySelector('#'+id);if(p)p.classList.add('active');
 }
+function photoKey(file){return [file.name,file.size,file.lastModified].join(':')}
+function addAnalysisPhotos(files){
+ const existing=new Set(analysisPhotos.map(photoKey));
+ for(const file of Array.from(files||[])){if(!file.type?.startsWith('image/'))continue;if(existing.has(photoKey(file)))continue;analysisPhotos.push(file);existing.add(photoKey(file))}
+ renderPhotos()
+}
+function renderPhotos(){
+ const grid=document.querySelector('#photoGrid');grid.innerHTML='';
+ analysisPhotos.forEach((file,i)=>{
+  const card=document.createElement('div');card.className='photocard';
+  const img=document.createElement('img');img.alt=file.name||`Photo ${i+1}`;img.src=URL.createObjectURL(file);img.onload=()=>URL.revokeObjectURL(img.src);
+  const cap=document.createElement('div');cap.className='cap';cap.textContent=`${i+1}. ${file.name||'pasted image'}`;
+  card.append(img,cap);grid.appendChild(card)
+ });
+ document.querySelector('#photoHelp').textContent=analysisPhotos.length
+  ? `${analysisPhotos.length} photo(s) loaded locally. Right-click/long-press any preview for Google Lens, or copy a contact sheet into ChatGPT.`
+  : 'Photos stay in your browser. For Google Lens in Chrome, right-click a preview (or long-press on Android) and choose Search with Google Lens.'
+}
+async function fileToImage(file){
+ const url=URL.createObjectURL(file);
+ try{return await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=reject;img.src=url})}
+ finally{}
+}
+async function makeContactSheet(){
+ if(!analysisPhotos.length)throw new Error('Add at least one photo first.');
+ const imgs=[];for(const file of analysisPhotos){const img=await fileToImage(file);imgs.push({img,file})}
+ const cols=Math.min(3,Math.max(1,Math.ceil(Math.sqrt(imgs.length))));
+ const cellW=1200,cellH=900,pad=24,labelH=44;
+ const rows=Math.ceil(imgs.length/cols),canvas=document.createElement('canvas');
+ canvas.width=cols*cellW;canvas.height=rows*(cellH+labelH);
+ const ctx=canvas.getContext('2d');ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.textAlign='left';ctx.textBaseline='middle';ctx.font='28px sans-serif';ctx.fillStyle='#111111';
+ imgs.forEach(({img,file},i)=>{
+  const col=i%cols,row=Math.floor(i/cols),x=col*cellW,y=row*(cellH+labelH);
+  const scale=Math.min((cellW-pad*2)/img.naturalWidth,(cellH-pad*2)/img.naturalHeight);
+  const w=img.naturalWidth*scale,h=img.naturalHeight*scale,dx=x+(cellW-w)/2,dy=y+(cellH-h)/2;
+  ctx.drawImage(img,dx,dy,w,h);ctx.fillText(`${i+1}. ${file.name||'image'}`,x+pad,y+cellH+labelH/2);
+  try{URL.revokeObjectURL(img.src)}catch{}
+ });
+ return canvas
+}
+async function copyContactSheet(){
+ try{
+  const canvas=await makeContactSheet();
+  const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));
+  if(!blob||!navigator.clipboard||typeof ClipboardItem==='undefined')throw new Error('Image clipboard is not supported in this browser.');
+  await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);
+  setAiStatus('Contact sheet copied as an image. Paste it directly into ChatGPT. For tiny text/details, attach the original photos too.',true)
+ }catch(e){setAiStatus(String(e.message||e),false)}
+}
+function clearPhotos(){analysisPhotos=[];document.querySelector('#aiPhotos').value='';renderPhotos()}
 function setAiStatus(msg,good=true){const el=document.querySelector('#aiStatus');el.textContent=msg;el.className=(good?'statusgood':'statuswarn')+' statusline'}
 function setProjectStatus(msg,good=true){const el=document.querySelector('#projectStatus');el.textContent=msg;el.className=(good?'statusgood':'statuswarn')+' statusline'}
 function analyzerValues(){return{
@@ -191,7 +253,7 @@ async function openChatGPT(){
 }
 function clearAnalyzer(){
  ['aiTitle','aiAsk','aiQty','aiInbound','aiWeight','aiSource','aiUrl','aiNotes','aiPrompt'].forEach(id=>document.querySelector('#'+id).value='');
- document.querySelector('#aiCurrency').value='PLN';setAiStatus('Cleared. Add the photos directly in ChatGPT after opening it.',true)
+ document.querySelector('#aiCurrency').value='PLN';clearPhotos();setAiStatus('Cleared. Add photos here or directly in ChatGPT.',true)
 }
 function fillFromListing(item){
  document.querySelector('#aiTitle').value=item.title||'';
@@ -213,6 +275,15 @@ document.querySelector('#openAnalyzer').onclick=()=>selectTab('chatgpt');
 document.querySelector('#buildCopyBtn').onclick=buildAndCopy;
 document.querySelector('#openChatGPTBtn').onclick=openChatGPT;
 document.querySelector('#clearAnalyzerBtn').onclick=clearAnalyzer;
+document.querySelector('#aiPhotos').addEventListener('change',e=>addAnalysisPhotos(e.target.files));
+document.querySelector('#photoDrop').onclick=()=>document.querySelector('#aiPhotos').click();
+document.querySelector('#photoDrop').addEventListener('dragover',e=>{e.preventDefault();e.currentTarget.classList.add('drag')});
+document.querySelector('#photoDrop').addEventListener('dragleave',e=>e.currentTarget.classList.remove('drag'));
+document.querySelector('#photoDrop').addEventListener('drop',e=>{e.preventDefault();e.currentTarget.classList.remove('drag');addAnalysisPhotos(e.dataTransfer.files)});
+document.querySelector('#copyContactSheetBtn').onclick=copyContactSheet;
+document.querySelector('#openLensBtn').onclick=()=>window.open('https://lens.google.com/','_blank','noopener');
+document.querySelector('#clearPhotosBtn').onclick=clearPhotos;
+document.addEventListener('paste',e=>{if(!document.querySelector('#chatgpt').classList.contains('active'))return;const files=[];for(const item of Array.from(e.clipboardData?.items||[])){if(item.type?.startsWith('image/')){const f=item.getAsFile();if(f)files.push(f)}}if(files.length){addAnalysisPhotos(files);setAiStatus(`${files.length} pasted image(s) added locally.`,true)}});
 document.querySelector('#saveProjectUrlBtn').onclick=()=>{
  const v=document.querySelector('#chatgptProjectUrl').value.trim();
  if(v&&!/^https:\/\/chatgpt\.com\//i.test(v)){setProjectStatus('Use a chatgpt.com project/chat URL.',false);return}

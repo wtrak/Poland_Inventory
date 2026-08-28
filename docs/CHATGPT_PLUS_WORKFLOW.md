@@ -30,6 +30,20 @@ Projects keep project instructions, chats and files together, and normal ChatGPT
 
 Then copy the URL of that ChatGPT Project and paste it into the dashboard under **ChatGPT Analysis → ChatGPT Project URL**. The dashboard saves that URL only in browser `localStorage`.
 
+## Photos
+
+The dashboard includes a local photo workspace. Photos are **not uploaded by the dashboard** and do not use an API.
+
+- Drop image files onto the photo area, click to choose them, or paste screenshots with Ctrl/Cmd+V.
+- The dashboard renders local previews.
+- In Chrome, right-click a preview (or long-press on Android) and choose **Search with Google Lens** for a free consumer visual search.
+- **Open Google Lens** opens Google's normal Lens interface for manual upload/search.
+- **Copy Contact Sheet** combines the selected photos locally in the browser and places one PNG on the clipboard. Paste that image directly into ChatGPT. For tiny labels, serials, or dense detail, attach the original full-resolution photos in ChatGPT as well.
+
+A website cannot safely inject local image files into another website's upload control. That browser security boundary is why the final photo attachment to ChatGPT or Google Lens remains an interactive user action.
+
+Google Lens is used here as its free consumer product, not as an automated backend. The free Lens interface is useful for identification and visual matches, but it is not an official free programmatic API for arbitrary bulk image evaluation.
+
 ## Per-listing workflow
 
 1. Open **ChatGPT Analysis** in the dashboard.
