@@ -1,8 +1,8 @@
 {
-  "last_run_utc": "2026-10-14T11:57:08.851729+00:00",
-  "last_success_utc": "2026-10-14T11:57:08.851729+00:00",
-  "last_fx_refresh": "2026-10-13",
-  "runs": 380,
+  "last_run_utc": "2026-10-14T17:13:56.806220+00:00",
+  "last_success_utc": "2026-10-14T17:13:56.806220+00:00",
+  "last_fx_refresh": "2026-10-14",
+  "runs": 381,
   "candidates_seen": 0,
   "new_buy_now": 0,
   "new_offer_only": 0,
@@ -10,7 +10,7 @@
   "archived": 0,
   "source_status": {
     "vinted": "manual in-app verification only; live TTL 4h; no public-web Vinted candidates",
-    "fx": "OK (2026-10-13)",
+    "fx": "OK (2026-10-14)",
     "github_inbox": "OK (0 candidate(s))",
     "approved_feeds": {
       "status": "No enabled permitted feeds"
