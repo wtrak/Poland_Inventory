@@ -1,36 +1,36 @@
 {
-  "as_of": "2026-11-18",
+  "as_of": "2026-11-19",
   "source": "European Central Bank daily reference rates",
   "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
   "base_note": "1 EUR reference rates normalized into USD and PLN. Refreshed by the hourly workflow; ECB normally publishes once per business day.",
   "rates": {
     "CZK": {
-      "usd_per_unit": 0.04497663,
-      "pln_per_unit": 0.18091528
+      "usd_per_unit": 0.04499939,
+      "pln_per_unit": 0.1808245
     },
     "EUR": {
-      "usd_per_unit": 1.0968,
-      "pln_per_unit": 4.4118
+      "usd_per_unit": 1.0992,
+      "pln_per_unit": 4.417
     },
     "GBP": {
-      "usd_per_unit": 1.31684476,
-      "pln_per_unit": 5.2969144
+      "usd_per_unit": 1.31513143,
+      "pln_per_unit": 5.28469389
     },
     "HUF": {
-      "usd_per_unit": 0.0029772,
-      "pln_per_unit": 0.01197557
+      "usd_per_unit": 0.00297539,
+      "pln_per_unit": 0.01195626
     },
     "PLN": {
-      "usd_per_unit": 0.24860601,
+      "usd_per_unit": 0.24885669,
       "pln_per_unit": 1.0
     },
     "RON": {
-      "usd_per_unit": 0.20513588,
-      "pln_per_unit": 0.82514448
+      "usd_per_unit": 0.20556169,
+      "pln_per_unit": 0.82602435
     },
     "USD": {
       "usd_per_unit": 1.0,
-      "pln_per_unit": 4.02242888
+      "pln_per_unit": 4.018377
     }
   }
 }
